@@ -22,3 +22,11 @@
 [x-cloak=""] {
     display: none;
 }
+
+.bg-primary {
+    background-color: #338CF5;
+}
+
+.text-primary {
+    color: #338CF5;
+}
