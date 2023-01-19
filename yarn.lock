@@ -1005,6 +1005,11 @@ react-dom@^18.2.0:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
 
+react-faq-component@^1.3.4:
+  version "1.3.4"
+  resolved "https://registry.npmjs.org/react-faq-component/-/react-faq-component-1.3.4.tgz#aebb3d5809a0c312f80d4697d9efb4c2eaabbc2c"
+  integrity sha512-oRXUfdr5OItsW4fRp5RMIUh4P2G1PAVMlFizWGR3ecwuCiNv/Akjx63yeOBrupCfh4AYqumPvQ3+hhKdxNkvxw==
+
 react-flatpickr@^3.10.13:
   version "3.10.13"
   resolved "https://registry.npmjs.org/react-flatpickr/-/react-flatpickr-3.10.13.tgz#5b9d8f35f84e43f342fb0f0334b78a8dcd7d67c4"
