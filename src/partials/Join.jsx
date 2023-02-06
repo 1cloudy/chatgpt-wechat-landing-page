@@ -1,6 +1,6 @@
 import React from "react";
 import PrivateImage from "../images/private.jpg";
-import GroupImage from "../images/group.jpg";
+import GroupImage from "../images/group2.jpg";
 
 export default function Join() {
   return (
