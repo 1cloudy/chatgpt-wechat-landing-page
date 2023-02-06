@@ -4,6 +4,7 @@ import Header from '../partials/Header';
 import HeroHome from '../partials/HeroHome';
 import FeaturesHome from '../partials/Features';
 import Footer from '../partials/Footer';
+import Join from '../partials/Join';
 import FAQ from '../partials/Faq';
 
 function Home() {
@@ -19,6 +20,7 @@ function Home() {
         {/*  Page sections */}
         <HeroHome />
         <FeaturesHome />
+        <Join />
         <FAQ />
 
       </main>
