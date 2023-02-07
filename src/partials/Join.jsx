@@ -4,7 +4,7 @@ import GroupImage from "../images/group2.jpg";
 
 export default function Join() {
   return (
-    <section id="joinus" className="relative mt-10 xl:mt-2">
+    <section id="joinus" className="relative mt-12">
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
         {/* Section header */}
         <div className="max-w-3xl mx-auto text-center pb-6 md:pb-8">
