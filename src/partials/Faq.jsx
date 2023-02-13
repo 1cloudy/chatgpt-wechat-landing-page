@@ -25,6 +25,16 @@ const data = {
                 </div>,
         },
         {
+            title: <div class="font-bold leading-snug tracking-wide mb-1">为什么@机器人，但是没有任何响应</div>,
+            content:
+                <div className="leading-8 mb-1">
+                    <ul className="list-decimal leading-8">
+                        <li>1. 请在chrome浏览器导航栏找到本插件的图标，点击图标，看弹窗中的chatgpt页面是否处于登录状态。如果未登录，请尝试多点击几次插件图标。</li>
+                        <li>2. 插件对提问字数做了限制，问题内容（不包括@昵称）需要超过2个字符才会触发chatgpt的响应。</li>
+                    </ul>
+                </div>
+        },
+        {
             title: <div class="font-bold leading-snug tracking-wide mb-1">为什么@机器人的消息要好久才收到，感觉响应很慢</div>,
             content:
                 <div className="leading-8 mb-1">
