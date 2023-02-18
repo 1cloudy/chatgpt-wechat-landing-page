@@ -25,6 +25,13 @@ const data = {
                 </div>,
         },
         {
+            title: <div class="font-bold leading-snug tracking-wide mb-1">微信网页版无法登录怎么办？</div>,
+            content:
+                <div className="leading-8 mb-1">
+                    如果你在访问微信网页版时，提示这个错误：“为了保障你的帐号安全，暂不支持使用网页版微信。你可以前往微信官网 https://weixin.qq.com/ 下载客户端登录。”，可以下载这个补丁插件<a href="https://aow.me/chatgpt4wechat_fix" target="_blank">https://aow.me/chatgpt4wechat_fix</a> 或参考 <a href="https://github.com/adamyi/wechrome">Github</a> 自行解决。
+                </div>,
+        },
+        {
             title: <div class="font-bold leading-snug tracking-wide mb-1">为什么@机器人，但是没有任何响应</div>,
             content:
                 <div className="leading-8 mb-1">

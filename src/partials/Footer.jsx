@@ -77,7 +77,7 @@ function Footer() {
             <a className="text-blue-600 hover:underline" href="https://aow.me/">
               aow
             </a>
-            . All rights reserved.
+            . All rights reserved. <a href="https://aow.me/disclaimer">免责声明</a>
           </div>
         </div>
       </div>

@@ -47,7 +47,7 @@ function Features() {
               >
                 <div>
                   <div className="font-bold leading-snug tracking-wide mb-1">1. 打开微信网页版页面</div>
-                  <div className="text-gray-600">首先，你需要有一个可以支持微信网页版 <a className="text-blue-500" href="https://wx.qq.com" target="_blank">https://wx.qq.com</a> 登录的微信号</div>
+                  <div className="text-gray-600">首先，你需要有一个可以支持微信网页版 <a className="text-blue-500" href="https://wx.qq.com" target="_blank">https://wx.qq.com</a> 登录的微信号，若无法登录请看常见问题第三条</div>
                 </div>
               </a>
               <a
