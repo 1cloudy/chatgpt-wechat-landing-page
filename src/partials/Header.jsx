@@ -44,13 +44,13 @@ function Header() {
           <nav className="flex flex-grow">
             <ul className="flex flex-grow justify-end flex-wrap items-center">
               <li>
-                <a href="https://chatgpt4filehelper.aow.me" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">微信个人版</a>
+                <a href="https://chatgpt4filehelper.aow.me" className="font-medium text-gray-600 hover:text-gray-900 py-3 flex items-center transition duration-150 ease-in-out">个人版</a>
               </li>
               <li>
                 <a href="https://chat.aoq.me" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">加入社区</a>
               </li>
               <li>
-                <a target="_blank" href="https://weilaimeixue.notion.site/weilaimeixue/As-3bc4631f854e44d78825d4a4e73b2e02" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">了解更多</a>
+                <a target="_blank" href="https://weilaimeixue.notion.site/weilaimeixue/As-3bc4631f854e44d78825d4a4e73b2e02" className="font-medium text-gray-600 hover:text-gray-900 py-3 flex items-center transition duration-150 ease-in-out">了解更多</a>
               </li>
             </ul>
           </nav>
