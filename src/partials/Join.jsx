@@ -1,6 +1,7 @@
 import React from "react";
 import PrivateImage from "../images/private.jpg";
 import GroupImage from "../images/group2.jpg";
+import TryImage from "../images/try.jpg";
 
 export default function Join() {
   return (
@@ -13,18 +14,19 @@ export default function Join() {
 
         {/* Section content */}
         <div className="mb-16 md:mb-16">
-          <div class="grid grid-flow-col grid-cols-2 gap-8">
-            <div className="flex items-center justify-center">
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+            <div className="flex flex-col items-center justify-center">
               <img
                 className="w-36 md:w-48 mx-auto rounded"
-                src={PrivateImage}
+                src={TryImage}
                 width="100%"
                 height="100%"
-                alt="个人微信"
+                alt="体验群二维码"
                 loading="lazy"
               />
+              <div className="text-center pt-6 md:pt-8">ChatGPT体验群</div>
             </div>
-            <div className="flex items-center justify-center">
+            <div className="flex flex-col items-center justify-center">
               <img
                 className="w-36 md:w-48 mx-auto rounded"
                 src={GroupImage}
@@ -33,6 +35,18 @@ export default function Join() {
                 alt="微信群"
                 loading="lazy"
               />
+              <div className="text-center pt-6 md:pt-8">插件问题交流群</div>
+            </div>
+            <div className="flex flex-col items-center justify-center">
+              <img
+                className="w-36 md:w-48 mx-auto rounded"
+                src={PrivateImage}
+                width="100%"
+                height="100%"
+                alt="个人微信"
+                loading="lazy"
+              />
+              <div className="text-center pt-6 md:pt-8">个人微信</div>
             </div>
           </div>
         </div>

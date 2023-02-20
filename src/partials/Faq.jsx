@@ -28,7 +28,11 @@ const data = {
             title: <div class="font-bold leading-snug tracking-wide mb-1">微信网页版无法登录怎么办？</div>,
             content:
                 <div className="leading-8 mb-1">
-                    如果你在访问微信网页版时，提示这个错误：“为了保障你的帐号安全，暂不支持使用网页版微信。你可以前往微信官网 https://weixin.qq.com/ 下载客户端登录。”，可以下载这个补丁插件<a href="https://aow.me/chatgpt4wechat_fix" target="_blank">https://aow.me/chatgpt4wechat_fix</a> 或参考 <a href="https://github.com/adamyi/wechrome">Github</a> 自行解决。
+                    如果你在访问微信网页版时，提示这个错误：“为了保障你的帐号安全，暂不支持使用网页版微信。你可以前往微信官网 https://weixin.qq.com/ 下载客户端登录。”，请按照以下步骤操作：
+                    <ul className="list-decimal leading-8">
+                        <li>1. 打开微信网页版页面，地址：<a className="text-blue-500" href="https://wx.qq.com/?target=t" target="_blank">https://wx.qq.com/<b>?target=t</b></a>。<span className="text-yellow-500">注意：务必带上后面的请求参数！</span></li>
+                        <li>2. 下载最新版的插件，目前 Chrome Store 还在审核中，请点击 <a href="https://aow.me/offline_latest" target="_blank">此处</a> 下载离线安装包<span className="text-green-500">（最新版本为：2.1.0）</span></li>
+                    </ul>
                 </div>,
         },
         {
@@ -38,6 +42,7 @@ const data = {
                     <ul className="list-decimal leading-8">
                         <li>1. 请在chrome浏览器导航栏找到本插件的图标，点击图标，看弹窗中的chatgpt页面是否处于登录状态。如果未登录，请尝试多点击几次插件图标。</li>
                         <li>2. 插件对提问字数做了限制，问题内容（不包括@昵称）需要超过2个字符才会触发chatgpt的响应。</li>
+                        <li>3. 检查自己的微信昵称中是否存在表情符号或其他特殊字符，如果存在请修改为简单的昵称，建议只用数字、字母或中文，修改完毕后刷新微信网页版页面。</li>
                     </ul>
                 </div>
         },
@@ -66,6 +71,17 @@ const data = {
             content:
                 <div className="leading-8 mb-1">
                     这是一个Bug，目前暂无修复方案。可以点击微信网页版页面，左侧头像旁边的三道横杠的图标，尝试关闭小铃铛解决。
+                </div>,
+        },
+        {
+            title: <div class="font-bold leading-snug tracking-wide mb-1">使用过程中我该注意点什么？
+            </div>,
+            content:
+                <div className="leading-8 mb-1">
+                    <ul className="list-decimal leading-8">
+                        <li>1. 使用本插件，请仔细阅读<a href="https://aow.me/tos" target="_blank">用户协议</a>，如果你不同意该协议，请立即卸载本插件并删除。</li>
+                        <li>2. 使用本插件，请仔细阅读<a href="https://aow.me/disclaimer" target="_blank">免责声明</a>，如果你不同意该声明，请立即卸载本插件并删除。</li>
+                    </ul>
                 </div>,
         }
     ],
