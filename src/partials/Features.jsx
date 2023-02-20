@@ -47,7 +47,7 @@ function Features() {
               >
                 <div>
                   <div className="font-bold leading-snug tracking-wide mb-1">1. 打开微信网页版页面</div>
-                  <div className="text-gray-600">首先，你需要有一个可以支持微信网页版 <a className="text-blue-500" href="https://wx.qq.com" target="_blank">https://wx.qq.com</a> 登录的微信号，若无法登录请看常见问题第三条</div>
+                  <div className="text-gray-600">在谷歌浏览器中输入 <span className="text-blue-500">chrome://extensions/</span> 将下载好的离线安装包拖进去，然后打开 <a className="text-blue-500" href="https://wx.qq.com/?target=t" target="_blank">微信网页版</a></div>
                 </div>
               </a>
               <a
@@ -57,7 +57,7 @@ function Features() {
               >
                 <div>
                   <div className="font-bold leading-snug tracking-wide mb-1">2. 打开 ChatGPT 的页面</div>
-                  <div className="text-gray-600">其次，你需要有ChatGPT账号并保持页面 <a className="text-blue-500" href="https://chat.openai.com" target="_blank">https://chat.openai.com</a> 处于登录状态</div>
+                  <div className="text-gray-600">如果有ChatGPT账号，请保持页面 <a className="text-blue-500" href="https://chat.openai.com/chat" target="_blank">https://chat.openai.com</a> 处于登录状态</div>
                 </div>
               </a>
               <a
@@ -67,7 +67,7 @@ function Features() {
               >
                 <div>
                   <div className="font-bold leading-snug tracking-wide mb-1">3. 触发 ChatGPT 应答微信消息</div>
-                  <div className="text-gray-600">最后，在微信群组或私信中 <span className="text-blue-500">@你的昵称</span> 验证是否能收到 ChatGPT 的回复</div>
+                  <div className="text-gray-600">在微信群组或私信中 <span className="text-blue-500">@你的昵称</span> 验证是否能收到 ChatGPT 的回复，注意问题字数需要超过2个字</div>
                 </div>
               </a>
             </div>
