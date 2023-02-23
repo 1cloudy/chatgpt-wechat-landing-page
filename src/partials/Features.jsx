@@ -47,7 +47,7 @@ function Features() {
               >
                 <div>
                   <div className="font-bold leading-snug tracking-wide mb-1">1. 打开微信网页版页面</div>
-                  <div className="text-gray-600">在谷歌浏览器中输入 <span className="text-blue-500">chrome://extensions/</span> 将下载好的离线安装包拖进去，然后打开 <a className="text-blue-500" href="https://wx.qq.com/?target=t" target="_blank">微信网页版</a></div>
+                  <div className="text-gray-600">通过 Chrome Store 安装最新版插件，通过此地址 <a className="text-blue-500" href="https://wx.qq.com/?target=t" target="_blank">https://wx.qq.com/?target=t</a> 访问微信网页版</div>
                 </div>
               </a>
               <a
@@ -57,7 +57,7 @@ function Features() {
               >
                 <div>
                   <div className="font-bold leading-snug tracking-wide mb-1">2. 打开 ChatGPT 的页面</div>
-                  <div className="text-gray-600">如果有ChatGPT账号，请保持页面 <a className="text-blue-500" href="https://chat.openai.com/chat" target="_blank">https://chat.openai.com</a> 处于登录状态</div>
+                  <div className="text-gray-600">如果有 ChatGPT 账号，请保持页面 <a className="text-blue-500" href="https://chat.openai.com/chat" target="_blank">https://chat.openai.com</a> 处于登录状态</div>
                 </div>
               </a>
               <a
