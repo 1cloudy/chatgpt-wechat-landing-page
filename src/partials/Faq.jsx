@@ -35,7 +35,7 @@ const data = {
                         <li>3. 本插件仅提供功能增强和便利性，我们不对插件使用过程中产生的任何问题和损失承担责任。</li>
                         <li>4. 本插件的版权归AOW.ME所有。未经许可，不得对插件进行修改、复制、分发或销售。</li>
                         <li>5. 我们有权在必要时修改插件的功能、界面、使用方式等内容。</li>
-                        <li>6. 如果您对本插件有任何疑问或建议，请通过以下方式与我们取得联系：<a className="text-blue-500" href="mailto:feedback@aoq.me">feedback@aoq.me</a>。</li>
+                        <li>6. 如果您对本插件有任何使用建议，请通过微信与 <span className="text-blue-500">AS</span> 联系或发送邮件告知我们<a className="text-blue-500" href="mailto:feedback@aoq.me">feedback@aoq.me</a>。</li>
                     </ul>
                 </div>,
         },
