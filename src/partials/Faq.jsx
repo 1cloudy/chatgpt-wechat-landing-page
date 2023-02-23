@@ -25,6 +25,21 @@ const data = {
                 </div>,
         },
         {
+            title: <div class="font-bold leading-snug tracking-wide mb-1">使用这个插件我该注意点什么？
+            </div>,
+            content:
+                <div className="leading-8 mb-1">
+                    <ul className="list-decimal leading-8">
+                        <li>1. 使用本插件前，请您仔细阅读本插件<a className="text-blue-500" href="https://aow.me/tos" target="_blank">用户协议</a>和<a className="text-blue-500" href="https://aow.me/disclaimer" target="_blank">免责声明</a>，如果您不同意该协议或声明，请立即卸载或删除本插件。</li>
+                        <li>2. 本插件仅供个人使用，不得用于任何商业用途，包括但不限于付费微信群、企业微信群等。如果您需要商业使用本插件，请联系我们进行授权。<br />联系方式：<a className="text-blue-500" href="mailto:contact@aoq.me">contact@aoq.me</a></li>
+                        <li>3. 本插件仅提供功能增强和便利性，我们不对插件使用过程中产生的任何问题和损失承担责任。</li>
+                        <li>4. 本插件的版权归AOW.ME所有。未经许可，不得对插件进行修改、复制、分发或销售。</li>
+                        <li>5. 我们有权在必要时修改插件的功能、界面、使用方式等内容。</li>
+                        <li>6. 如果您对本插件有任何疑问或建议，请通过以下方式与我们取得联系：<a className="text-blue-500" href="mailto:feedback@aoq.me">feedback@aoq.me</a>。</li>
+                    </ul>
+                </div>,
+        },
+        {
             title: <div class="font-bold leading-snug tracking-wide mb-1">微信网页版无法登录怎么办？</div>,
             content:
                 <div className="leading-8 mb-1">
@@ -36,7 +51,7 @@ const data = {
                 </div>,
         },
         {
-            title: <div class="font-bold leading-snug tracking-wide mb-1">为什么@机器人，但是没有任何响应</div>,
+            title: <div class="font-bold leading-snug tracking-wide mb-1">为什么@机器人，但是没有任何响应？</div>,
             content:
                 <div className="leading-8 mb-1">
                     <ul className="list-decimal leading-8">
@@ -47,7 +62,7 @@ const data = {
                 </div>
         },
         {
-            title: <div class="font-bold leading-snug tracking-wide mb-1">为什么@机器人的消息要好久才收到，感觉响应很慢</div>,
+            title: <div class="font-bold leading-snug tracking-wide mb-1">为什么@机器人的消息要好久才收到，感觉响应很慢？</div>,
             content:
                 <div className="leading-8 mb-1">
                     因为ChatGPT的响应是异步数据流，在网页上可以实时刷新数据流响应，但在微信消息中只能等收到完整结果后一次发送，所以体验上感觉会有30秒左右的延迟，具体视ChatGPT的响应内容多少而定，这是正常现象。
@@ -73,17 +88,6 @@ const data = {
                     这是一个Bug，目前暂无修复方案。可以点击微信网页版页面，左侧头像旁边的三道横杠的图标，尝试关闭小铃铛解决。
                 </div>,
         },
-        {
-            title: <div class="font-bold leading-snug tracking-wide mb-1">使用过程中我该注意点什么？
-            </div>,
-            content:
-                <div className="leading-8 mb-1">
-                    <ul className="list-decimal leading-8">
-                        <li>1. 使用本插件，请仔细阅读<a href="https://aow.me/tos" target="_blank">用户协议</a>，如果你不同意该协议，请立即卸载本插件并删除。</li>
-                        <li>2. 使用本插件，请仔细阅读<a href="https://aow.me/disclaimer" target="_blank">免责声明</a>，如果你不同意该声明，请立即卸载本插件并删除。</li>
-                    </ul>
-                </div>,
-        }
     ],
 };
 

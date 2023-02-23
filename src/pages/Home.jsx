@@ -6,6 +6,7 @@ import FeaturesHome from '../partials/Features';
 import Footer from '../partials/Footer';
 import Join from '../partials/Join';
 import FAQ from '../partials/Faq';
+import Popup from '../partials/Popup';
 
 function Home() {
   return (
@@ -24,6 +25,8 @@ function Home() {
         <FAQ />
 
       </main>
+
+      <Popup />
 
       {/*  Site footer */}
       <Footer />
