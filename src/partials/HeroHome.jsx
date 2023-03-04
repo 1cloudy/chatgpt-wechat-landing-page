@@ -1,5 +1,5 @@
 import React from 'react';
-
+import CoffeeImage from "../images/coffee.jpg";
 import ChromeIcon from '../images/chrome.svg';
 
 function HeroHome() {
@@ -26,8 +26,12 @@ function HeroHome() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
         {/* Hero content */}
-        <div className="pt-32 pb-6 md:pt-40 md:pb-10">
-
+        <div className="pt-24 pb-6 md:pt-40 md:pb-10">
+          <div className="max-w-5xl mx-auto text-center pb-6 md:pb-8">
+            <div className="bg-blue-100 rounded-md p-4 mb-4 !hidden">
+              <span className="text-sm">无 ChatGPT 账号，在本站体验 ChatGPT 版本即将上线！开发者coding····</span><br />
+            </div>
+          </div>
           {/* Section header */}
           <div className="text-center pb-6 md:pb-8">
             <h1 className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">ChatGPT for <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">Wechat</span></h1>
@@ -40,13 +44,9 @@ function HeroHome() {
                     <span className="ml-2 -mr-1">安装到 chrome</span>
                   </a>
                 </div>
-                <div>
-                  <a href="https://aow.me/offline_latest" target="_blank" className="btn text-gray-900 bg-gray-200 hover:text-blue-500 hover:bg-gray-200 w-full sm:w-auto sm:ml-4">离线安装包</a>
-                </div>
               </div>
             </div>
           </div>
-
         </div>
 
       </div>

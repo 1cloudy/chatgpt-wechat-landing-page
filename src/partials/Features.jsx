@@ -25,12 +25,12 @@ function Features() {
   return (
     <section className="relative">
       {/* Section background (needs .relative class on parent and next sibling elements) */}
-      <div className="absolute inset-0 bg-gray-100 pointer-events-none mb-16" aria-hidden="true"></div>
+      <div className="absolute inset-0 bg-gray-100 pointer-events-none mb-16 pt-8" aria-hidden="true"></div>
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
         {/* Section header */}
         <div className="max-w-3xl mx-auto text-center pb-6 md:pb-8">
-          <h1 className="h2 mb-4 tracking-wider">如何使用</h1>
+          <h1 className="h2 mt-4 mb-4 tracking-wider">如何使用</h1>
         </div>
 
         {/* Section content */}

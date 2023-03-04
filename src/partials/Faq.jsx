@@ -46,7 +46,7 @@ const data = {
                     如果你在访问微信网页版时出现这个提示：<span className="text-gray-400">“为了保障你的帐号安全，暂不支持使用网页版微信。你可以前往微信官网 https://weixin.qq.com/ 下载客户端登录。”</span>。<br />请按照以下步骤操作：
                     <ul className="list-decimal leading-8">
                         <li>1. 打开微信网页版页面，地址：<a className="text-blue-500" href="https://wx.qq.com/?target=t" target="_blank">https://wx.qq.com/<b>?target=t</b></a>。<span className="text-yellow-500">注意：务必带上后面的请求参数！</span></li>
-                        <li>2. 请通过 Chrome Store 下载最新版的插件<span className="text-green-500">（最新版本为：2.1.0）</span>，为保证版本统一后续将不在提供离线安装包下载方式。</li>
+                        <li>2. 请通过 Chrome Store 下载最新版的插件<span className="text-green-500">（最新版本为：2.3.0）</span></li>
                     </ul>
                 </div>,
         },

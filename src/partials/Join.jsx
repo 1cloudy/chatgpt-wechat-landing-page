@@ -14,18 +14,7 @@ export default function Join() {
 
         {/* Section content */}
         <div className="mb-16 md:mb-16">
-          <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
-            <div className="flex flex-col items-center justify-center">
-              <img
-                className="w-36 md:w-48 mx-auto rounded"
-                src={TryImage}
-                width="100%"
-                height="100%"
-                alt="体验群二维码"
-                loading="lazy"
-              />
-              <div className="text-center pt-6 md:pt-8">ChatGPT体验群</div>
-            </div>
+          <div class="grid grid-cols-2 md:grid-cols-2 gap-8">
             <div className="flex flex-col items-center justify-center">
               <img
                 className="w-36 md:w-48 mx-auto rounded"
