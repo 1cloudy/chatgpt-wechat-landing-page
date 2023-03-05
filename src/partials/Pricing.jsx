@@ -50,7 +50,7 @@ export default function PricingTable() {
                             ¥ 50
                         </div>
                         <div class="w-full text-center mb-8 mt-auto">
-                            <a href="https://pan.baidu.com/s/1EZK_eTS0xj4Pp_zdTkHPVg" class="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-500 hover:text-white hover:no-underline">离线包下载</a>
+                            <a href="https://aow.me/offline_plus" class="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-500 hover:text-white hover:no-underline">离线包下载</a>
                         </div>
                         <div class="w-full text-center px-8 pb-8 mt-auto text-gray-500 text-sm">
                             购买 Plus 版本，请添加微信：Asgrief，获取下载密钥。
