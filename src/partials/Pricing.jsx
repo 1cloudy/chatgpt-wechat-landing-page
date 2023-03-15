@@ -31,6 +31,9 @@ export default function PricingTable() {
                                 包含免费版所有功能
                             </div>
                             <div class="text-center border-0 border-grey-light border-b border-solid py-3">
+                                🌟 定义AI身份/角色
+                            </div>
+                            <div class="text-center border-0 border-grey-light border-b border-solid py-3">
                                 🌟 一键开启 Bot 接管
                             </div>
                             <div class="text-center border-0 border-grey-light border-b border-solid py-3">
@@ -44,7 +47,7 @@ export default function PricingTable() {
                             </div>
                         </div>
                         <div class="w-full text-center px-8 pt-8 pb-4 text-xl mt-auto">
-                            ¥ 60
+                            ¥ 100
                         </div>
                         <div class="w-full text-center px-8 pb-8 mt-auto text-gray-500 text-sm">
                             购买升级密钥，请添加微信：Asgrief。
@@ -57,10 +60,13 @@ export default function PricingTable() {
                                 含 Plus 版本所有功能
                             </div>
                             <div class="text-center border-0 border-grey-light border-b border-solid py-3">
-                                🌟 定义AI身份/角色
+                                🌟 商业授权
                             </div>
                             <div class="text-center border-0 border-grey-light border-b border-solid py-3">
-                                🌟 商业授权
+                                🌟 定制消息模版
+                            </div>
+                            <div class="text-center border-0 border-grey-light border-b border-solid py-3">
+                                支持第三方平台接入
                             </div>
                             <div class="text-center border-0 border-grey-light border-b border-solid py-3">
                                 过滤敏感词API
