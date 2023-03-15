@@ -60,10 +60,13 @@ export default function PricingTable() {
                                 含 Plus 版本所有功能
                             </div>
                             <div class="text-center border-0 border-grey-light border-b border-solid py-3">
-                                🌟 商业授权
+                                🌟 商业授权 (定制消息模版)
                             </div>
                             <div class="text-center border-0 border-grey-light border-b border-solid py-3">
-                                🌟 定制消息模版
+                                🌟 自定义代理服务器
+                            </div>
+                            <div class="text-center border-0 border-grey-light border-b border-solid py-3">
+                                定制其他需求
                             </div>
                             <div class="text-center border-0 border-grey-light border-b border-solid py-3">
                                 支持第三方平台接入
@@ -73,9 +76,6 @@ export default function PricingTable() {
                             </div>
                             <div class="text-center border-0 border-grey-light border-b border-solid py-3">
                                 模型定制
-                            </div>
-                            <div class="text-center border-0 border-grey-light border-b border-solid py-3">
-                                定制其他需求
                             </div>
                         </div>
                         <div class="w-full text-center px-8 pt-8 pb-8 text-xl mt-auto">
