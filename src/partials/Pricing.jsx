@@ -31,7 +31,10 @@ export default function PricingTable() {
                                 包含免费版所有功能
                             </div>
                             <div class="text-center border-0 border-grey-light border-b border-solid py-3">
-                                🌟 定义AI身份/角色
+                                🌟 一键开启 Bot 接管
+                            </div>
+                            <div class="text-center border-0 border-grey-light border-b border-solid py-3">
+                                🌟 入群欢迎语
                             </div>
                             <div class="text-center border-0 border-grey-light border-b border-solid py-3">
                                 🌟 自定义单用户提问频率
@@ -39,15 +42,9 @@ export default function PricingTable() {
                             <div class="text-center border-0 border-grey-light border-b border-solid py-3">
                                 🌟 自定义队列积压告警阈值
                             </div>
-                            <div class="text-center border-0 border-grey-light border-b border-solid py-3">
-                                🌟 一键开启 Bot 接管
-                            </div>
-                            <div class="text-center border-0 border-grey-light border-b border-solid py-3">
-                                🌟 入群欢迎语
-                            </div>
                         </div>
                         <div class="w-full text-center px-8 pt-8 pb-4 text-xl mt-auto">
-                            ¥ 100
+                            ¥ 60
                         </div>
                         <div class="w-full text-center px-8 pb-8 mt-auto text-gray-500 text-sm">
                             购买升级密钥，请添加微信：Asgrief。
@@ -58,6 +55,9 @@ export default function PricingTable() {
                         <div class="border-0 border-grey-light border-t border-solid text-sm">
                             <div class="text-center border-0 border-grey-light border-b border-solid py-3">
                                 含 Plus 版本所有功能
+                            </div>
+                            <div class="text-center border-0 border-grey-light border-b border-solid py-3">
+                                🌟 定义AI身份/角色
                             </div>
                             <div class="text-center border-0 border-grey-light border-b border-solid py-3">
                                 🌟 商业授权
