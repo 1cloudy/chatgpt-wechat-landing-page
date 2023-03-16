@@ -47,7 +47,7 @@ export default function PricingTable() {
                             </div>
                         </div>
                         <div class="w-full text-center px-8 pt-8 pb-4 text-xl mt-auto">
-                            ¥ 30/人/月
+                            ¥ 50/人/月
                         </div>
                         <div class="w-full text-center px-8 pb-8 mt-auto text-sm">
                             <a href="https://aow.me/pricing" class="text-blue-500 hover:text-gray-900">必读购买须知</a> 升级密钥请添加微信：Asgrief。
