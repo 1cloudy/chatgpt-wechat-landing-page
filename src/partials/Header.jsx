@@ -47,7 +47,7 @@ function Header() {
                 <a href="https://chatgpt4filehelper.aow.me" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">个人助手版</a>
               </li>
               <li>
-                <a target="_blank" href="https://as-notion-git-main-weilai.vercel.app/blog" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">GPT 使用指南</a>
+                <a target="_blank" href="https://as-notion-git-main-weilai.vercel.app/blog" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">使用指南</a>
               </li>
               <li>
                 <a href="https://chat.aoq.me" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">加入社区</a>
