@@ -97,7 +97,7 @@ export default function PricingTable() {
             </button>
           </div>
 
-          <div className="px-6 py-4 -my-6 transition-colors duration-200 transform bg-gradient-to-b from-purple-500 to-purple-500 rounded-lg ">
+          <div className="px-6 py-4 transition-colors duration-200 transform bg-gradient-to-b from-purple-500 to-purple-500 rounded-lg ">
             <div className="flex flex-row justify-between items-center">
               <p className="text-3xl font-semibold text-gray-100">
                 {pricingTable.plus.name}
