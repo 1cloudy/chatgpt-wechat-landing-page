@@ -1,89 +1,123 @@
 import React from "react";
 
-export default function PricingTable() {
+const FeatureItem = ({ title, selected }) => {
     return (
-        <section id="pricing" className="relative mt-16 pt-16 pb-16 bg-gray-200">
-            <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
-                <div class="flex flex-col sm:flex-row justify-center mb-6 sm:mb-0">
-                    <div class="sm:flex-1 lg:flex-initial lg:w-1/4 hover:bg-blue-100 hover:text-blue-500 rounded-lg bg-white mt-4 mr-12 ml-12 flex flex-col">
-                        <div class="p-8 text-2xl font-bold text-center">Free <br /><span class="text-sm">(仅限个人微信群使用)</span></div>
-                        <div class="border-0 border-grey-light border-t border-solid text-sm">
-                            <div class="text-center border-0 border-grey-light border-b border-solid py-3">
-                                支持ChatGPT 网页端
-                            </div>
-                            <div class="text-center border-0 border-grey-light border-b border-solid py-3">
-                                ChatGPT 网页端模型可选（已支持4.0）
-                            </div>
-                            <div class="text-center border-0 border-grey-light border-b border-solid py-3">
-                                支持ChatGPT API gpt4 模型
-                            </div>
-                            <div class="text-center border-0 border-grey-light border-b border-solid py-3">
-                                API支持上下文
-                            </div>
-                        </div>
-                        <div class="w-full text-center px-8 pt-8 pb-4 text-xl mt-auto">
-                        </div>
-                    </div>
-                    <div class="flex-1 lg:flex-initial lg:w-1/4 rounded-lg hover:bg-blue-100  hover:text-blue-500 bg-white mt-4 sm:-mt-4 shadow-lg z-30 flex flex-col">
-                        <div class="w-full p-8 text-2xl font-bold text-center">Plus<br /><span class="text-sm">(仅限个人微信群使用)</span></div>
-                        <div class="w-full border-0 border-grey-light border-t border-solid text-sm">
-                            <div class="text-center border-0 border-grey-light border-b border-solid py-3">
-                                包含免费版所有功能
-                            </div>
-                            <div class="text-center border-0 border-grey-light border-b border-solid py-3">
-                                🌟 定义AI身份/角色
-                            </div>
-                            <div class="text-center border-0 border-grey-light border-b border-solid py-3">
-                                🌟 一键开启 Bot 接管
-                            </div>
-                            <div class="text-center border-0 border-grey-light border-b border-solid py-3">
-                                🌟 入群欢迎语
-                            </div>
-                            <div class="text-center border-0 border-grey-light border-b border-solid py-3">
-                                🌟 自定义单用户提问频率
-                            </div>
-                            <div class="text-center border-0 border-grey-light border-b border-solid py-3">
-                                🌟 自定义队列积压告警阈值
-                            </div>
-                        </div>
-                        <div class="w-full text-center px-8 pt-8 pb-4 text-xl mt-auto">
-                            ¥ 100
-                        </div>
-                        <div class="w-full text-center px-8 pb-8 mt-auto text-sm">
-                            <a href="https://blog.aow.me/blog/pricing" class="text-blue-500 hover:text-gray-900">必读购买须知</a> 升级密钥请添加微信：Asgrief。
-                        </div>
-                    </div>
-                    <div class="flex-1 lg:flex-initial lg:w-1/4 rounded-lg hover:bg-blue-100  hover:text-blue-500 bg-white mt-4 mr-12 ml-12 flex flex-col">
-                        <div class="p-8 text-2xl font-bold text-center">商业版<br /><span class="text-sm">(可用于付费或企业微信群)</span></div>
-                        <div class="border-0 border-grey-light border-t border-solid text-sm">
-                            <div class="text-center border-0 border-grey-light border-b border-solid py-3">
-                                含 Plus 版本所有功能
-                            </div>
-                            <div class="text-center border-0 border-grey-light border-b border-solid py-3">
-                                🌟 商业授权 (定制消息模版)
-                            </div>
-                            <div class="text-center border-0 border-grey-light border-b border-solid py-3">
-                                🌟 自定义代理服务器
-                            </div>
-                            <div class="text-center border-0 border-grey-light border-b border-solid py-3">
-                                定制其他需求
-                            </div>
-                            <div class="text-center border-0 border-grey-light border-b border-solid py-3">
-                                支持第三方平台接入
-                            </div>
-                            <div class="text-center border-0 border-grey-light border-b border-solid py-3">
-                                过滤敏感词API
-                            </div>
-                            <div class="text-center border-0 border-grey-light border-b border-solid py-3">
-                                模型定制
-                            </div>
-                        </div>
-                        <div class="w-full text-center px-8 pt-8 pb-8 text-xl mt-auto">
-                            联系咨询
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div className="flex items-center">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className={`w-5 h-5 ${selected ? "text-gray-300" : "text-blue-500"}`}
+                viewBox="0 0 20 20"
+                fill="currentColor"
+            >
+                <path
+                    fillRule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clipRule="evenodd"
+                />
+            </svg>
+
+            <span className={`mx-4 ${selected ? "text-gray-100" : "text-gray-800"}`}>
+                {title}
+            </span>
+        </div>
     );
-}
+};
+
+const pricingTable = [
+    {
+        name: "Basic",
+        price: "Free",
+        description: "(仅限个人微信群使用)",
+        features: [
+            "支持ChatGPT 网页端",
+            "支持ChatGPT API",
+            "API支持上下文",
+            "可自由切换模型",
+        ],
+    },
+    {
+        name: "Plus",
+        price: "¥100",
+        description: "(仅限个人微信群使用)",
+        features: [
+            "包含免费版所有功能",
+            "🌟 定义AI身份/角色",
+            "🌟 一键开启 Bot 接管",
+            "🌟 入群欢迎语",
+            "🌟 自定义单用户提问频率",
+            "🌟 自定义队列积压告警阈值",
+        ],
+    },
+    {
+        name: "Business",
+        price: "¥300",
+        description: "(可用于付费或企业微信群)",
+        features: [
+            "含 Plus 版本所有功能",
+            "🌟 商业授权 (定制消息模版)",
+            "🌟 自定义代理服务器",
+            "定制其他需求",
+            "支持第三方平台接入",
+            "过滤敏感词API",
+            "模型定制",
+        ],
+    },
+];
+
+const PricingTable = () => {
+    return (
+        <section id="pricing" className="relative pt-8 pb-8 bg-white">
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="max-w-3xl mx-auto text-center pb-6 md:pb-8">
+            <h1 className="h2 mt-4 mb-4 tracking-wider">更多的选择</h1>
+          </div>
+      
+          <div className="grid gap-6 mt-8 sm:gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+            {pricingTable.map((item, index) => {
+              const isPlusPlan = item.name === "Plus";
+              const cardBg = isPlusPlan ? "bg-purple-500 text-gray-100" : "bg-gray-100 text-gray-800";
+              const order = isPlusPlan ? 2 : index;
+              return (
+                <div
+                  key={item.name}
+                  className={`px-6 py-4 transition-colors duration-200 transform rounded-lg ${cardBg} hover:bg-purple-200 hover:text-gray-900 dark:hover:bg-purple-200`}
+                  style={{ order }}
+                >
+                  <div className="flex flex-row justify-between items-center">
+                    <div className="text-3xl font-semibold">
+                      {item.name}
+                    </div>
+                    <h4 className="mt-2 text-4xl font-semibold">
+                      {item.price}
+                    </h4>
+                  </div>
+                  <p className="mt-4">{item.description}</p>
+      
+                  <div className="mt-8 space-y-8">
+                    {item.features.map((feature) => {
+                      return (
+                        <FeatureItem
+                          key={feature}
+                          title={feature}
+                          selected={isPlusPlan}
+                        />
+                      );
+                    })}
+                  </div>
+      
+                  {isPlusPlan && (
+                    <button className="w-full px-4 py-2 mt-10 font-medium tracking-wide text-gray-900 capitalize transition-colors duration-200 transform bg-purple-100 rounded-lg hover:bg-purple-600 focus:outline-none focus:bg-purple-600">
+                      微信联系：Asgrief
+                    </button>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+    );
+};
+
+export default PricingTable;
+

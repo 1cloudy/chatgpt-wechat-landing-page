@@ -66,19 +66,19 @@ export default function PricingTable() {
   };
 
   return (
-    <section id="pricing" className="relative pt-8 pb-8 bg-gray-50">
+    <section id="pricing" className="relative pt-8 pb-8 bg-white">
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
         <div className="max-w-3xl mx-auto text-center pb-6 md:pb-8">
           <h1 className="h2 mt-4 mb-4 tracking-wider">更多的选择</h1>
         </div>
 
         <div className="grid gap-6 mt-8 sm:gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
-          <div className="px-6 py-4 transition-colors duration-200 transform rounded-lg bg-gray-200 hover:bg-purple-200 dark:hover:bg-gray-700">
+          <div className="px-6 py-4 transition-colors duration-200 transform rounded-lg bg-gray-100 hover:bg-purple-200 dark:hover:bg-gray-700">
             <div className="flex flex-row justify-between items-center">
-              <div className="text-3xl font-semibold text-gray-800 dark:text-gray-100">
+              <div className="text-3xl font-semibold text-gray-800 dark:text-gray-500">
                 {pricingTable.basic.name}
               </div>
-              <h4 className="mt-2 text-4xl font-semibold text-gray-800 dark:text-gray-100">
+              <h4 className="mt-2 text-4xl font-semibold text-gray-800 dark:text-gray-500">
                 {pricingTable.basic.price}
               </h4>
             </div>

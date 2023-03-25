@@ -6,9 +6,11 @@ import FeaturesHome from '../partials/Features';
 import Footer from '../partials/Footer';
 import Join from '../partials/Join';
 import FAQ from '../partials/Faq';
-import Pricing from '../partials/Pricing';
+import PricingTable from '../partials/Pricing';
 import Pricing2 from '../partials/Pricing2';
 import Popup from '../partials/Popup';
+import ReactDOM from 'react-dom';
+import VideoPlayer from '../partials/VideoPlayer';
 
 function Home() {
   return (
@@ -22,9 +24,10 @@ function Home() {
 
         {/*  Page sections */}
         <HeroHome />
+        <VideoPlayer />
         <FeaturesHome />
         {/* <Pricing /> */}
-        <Pricing2 />
+        <PricingTable />
         <Join />
         <FAQ />
 
