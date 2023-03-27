@@ -40,6 +40,14 @@ const data = {
                 </div>,
         },
         {
+            title: <div class="font-bold leading-snug tracking-wide mb-1">使用插件时，显示“ChatGPT 网页链接异常"</div>,
+            content:
+                <div className="leading-8 mb-1">
+                    如果你在使用插件时出现这个提示：<span className="text-gray-400">“ChatGPT 网页链接异常”，错误信息：CloudFlare</span>请选择使用API源。添加你的API-Key，继续使用。<br /> 同时，请注意：群聊版插件仅可以在客户端请求时响应，比如在手机微信中@登录微信昵称。
+                </div>,
+        },
+
+        {
             title: <div class="font-bold leading-snug tracking-wide mb-1">微信网页版无法登录怎么办？</div>,
             content:
                 <div className="leading-8 mb-1">
