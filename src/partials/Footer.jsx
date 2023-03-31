@@ -75,7 +75,7 @@ function Footer() {
           <div className="text-sm text-gray-600 mr-4">
             Made by{" "}
             <a className="text-blue-600 hover:underline" href="https://aow.me/" target="_blank">
-              aow
+              aow.me
             </a>
             . All rights reserved. <a href="https://aow.me/disclaimer" target="_blank">免责声明</a>
           </div>

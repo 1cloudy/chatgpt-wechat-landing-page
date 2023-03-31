@@ -26,8 +26,8 @@ const FeatureItem = ({ title, selected }) => {
 const pricingTable = [
     {
         name: "Basic",
-        price: "Free",
-        description: "(仅限个人微信群使用)",
+        price: "基础版",
+        description: "开发不易，赞赏后使用",
         features: [
             "支持ChatGPT 网页端",
             "支持ChatGPT API",
@@ -36,11 +36,11 @@ const pricingTable = [
         ],
     },
     {
-        name: "Plus",
+        name: "Pro",
         price: "¥100",
-        description: "(仅限个人微信群使用)",
+        description: "赞赏后，升级解锁更多功能",
         features: [
-            "包含免费版所有功能",
+            "包含基础版所有功能",
             "🌟 定义AI身份/角色",
             "🌟 一键开启 Bot 接管",
             "🌟 入群欢迎语",
@@ -49,17 +49,14 @@ const pricingTable = [
         ],
     },
     {
-        name: "Business",
+        name: "Max",
         price: "¥300",
-        description: "(可用于付费或企业微信群)",
+        description: "赞赏后，升级解锁更多功能",
         features: [
-            "含 Plus 版本所有功能",
-            "🌟 商业授权 (定制消息模版)",
+            "含 Pro 版本所有功能",
             "🌟 自定义代理服务器",
-            "定制其他需求",
-            "支持第三方平台接入",
-            "过滤敏感词API",
-            "模型定制",
+            "🌟 获赠第三方平台Pro版",
+            "🌟 体验更多AI源（即将上线）",
         ],
     },
 ];
@@ -69,18 +66,18 @@ const PricingTable = () => {
         <section id="pricing" className="relative pt-8 pb-8 bg-white">
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
           <div className="max-w-3xl mx-auto text-center pb-6 md:pb-8">
-            <h1 className="h2 mt-4 mb-4 tracking-wider">更多的选择</h1>
+            <h1 className="h2 mt-4 mb-4 tracking-wider">更多选择</h1>
           </div>
       
           <div className="grid gap-6 mt-8 sm:gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
             {pricingTable.map((item, index) => {
-              const isPlusPlan = item.name === "Plus";
-              const cardBg = isPlusPlan ? "bg-purple-500 text-gray-100" : "bg-gray-100 text-gray-800";
-              const order = isPlusPlan ? 2 : index;
+              const isProPlan = item.name === "Pro";
+              const cardBg = isProPlan ? "bg-purple-500 text-gray-100" : "bg-gray-100 text-gray-800";
+              const order = isProPlan ? 2 : index;
               return (
                 <div
                   key={item.name}
-                  className={`px-6 py-4 transition-colors duration-200 transform rounded-lg ${cardBg} hover:bg-purple-200 hover:text-gray-900 dark:hover:bg-purple-200`}
+                  className={`px-6 py-4 transition-colors duration-200 transform rounded-lg ${cardBg} hover:bg-purple-200 hover:text-gray-900 dark:hover:bg-purple-200 dark:hover:text-gray-900`}
                   style={{ order }}
                 >
                   <div className="flex flex-row justify-between items-center">
@@ -99,16 +96,18 @@ const PricingTable = () => {
                         <FeatureItem
                           key={feature}
                           title={feature}
-                          selected={isPlusPlan}
+                          selected={isProPlan}
                         />
                       );
                     })}
                   </div>
       
-                  {isPlusPlan && (
-                    <button className="w-full px-4 py-2 mt-10 font-medium tracking-wide text-gray-900 capitalize transition-colors duration-200 transform bg-purple-100 rounded-lg hover:bg-purple-600 focus:outline-none focus:bg-purple-600">
-                      微信联系：Asgrief
+                  {isProPlan && (
+                    <a href="https://docs.aow.me" className="w-full">
+                    <button className="w-full px-4 py-2 mt-10 font-medium tracking-wide text-gray-900 capitalize transition-colors duration-200 transform bg-purple-100 rounded-lg hover:text-gray-900 focus:outline-none focus:bg-purple-300">
+                      支持开发者
                     </button>
+                  </a>
                   )}
                 </div>
               );

@@ -2,6 +2,8 @@ import React from "react";
 import PrivateImage from "../images/private.jpg";
 import GroupImage from "../images/group3.jpg";
 import TryImage from "../images/try.jpg";
+import WeChatPayImage from "../images/wxzsm.jpg"
+import AliPayImage from "../images/zfb.jpg"
 
 export default function Join() {
   return (
@@ -14,7 +16,7 @@ export default function Join() {
 
         {/* Section content */}
         <div className="mb-16 md:mb-16">
-          <div class="grid grid-cols-2 md:grid-cols-2 gap-8">
+          <div class="grid grid-cols-3 md:grid-cols-3 gap-8">
             <div className="flex flex-col items-center justify-center">
               <img
                 className="w-36 md:w-48 mx-auto rounded"
@@ -29,13 +31,24 @@ export default function Join() {
             <div className="flex flex-col items-center justify-center">
               <img
                 className="w-36 md:w-48 mx-auto rounded"
-                src={PrivateImage}
+                src={AliPayImage}
                 width="100%"
                 height="100%"
                 alt="个人微信"
                 loading="lazy"
               />
-              <div className="text-center pt-6 md:pt-8">个人微信</div>
+              <div className="text-center pt-6 md:pt-8">支付宝赞赏码</div>
+            </div>
+            <div className="flex flex-col items-center justify-center">
+              <img
+                className="w-36 md:w-48 mx-auto rounded"
+                src={WeChatPayImage}
+                width="100%"
+                height="100%"
+                alt="个人微信"
+                loading="lazy"
+              />
+              <div className="text-center pt-6 md:pt-8">微信赞赏码</div>
             </div>
           </div>
         </div>

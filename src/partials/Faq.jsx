@@ -31,19 +31,28 @@ const data = {
                 <div className="leading-8 mb-1">
                     <ul className="list-decimal leading-8">
                         <li>1. 使用本插件前，请您仔细阅读本插件<a className="text-blue-500" href="https://aow.me/tos" target="_blank">用户协议</a>和<a className="text-blue-500" href="https://aow.me/disclaimer" target="_blank">免责声明</a>，如果您不同意该协议或声明，请立即卸载或删除本插件。</li>
-                        <li>2. 本插件仅供个人使用，不得用于任何商业用途，包括但不限于付费微信群、企业微信群等。如果您需要商业使用本插件，请联系我们进行授权。联系方式：<a className="text-blue-500" href="mailto:contact@aoq.me">contact@aoq.me</a></li>
+                        <li>2. 本插件仅供个人使用，不得用于任何商业用途，包括但不限于付费微信群、企业微信群等。如果您需要商业使用本插件，请联系我们进行授权。联系方式：<a className="text-blue-500" href="mailto:contact@aow.me">contact@aow.me</a></li>
                         <li>3. 本插件仅提供功能增强和便利性，我们不对插件使用过程中产生的任何问题和损失承担责任。</li>
                         <li>4. 本插件的版权归AOW.ME所有。未经许可，不得对插件进行修改、复制、分发或销售。</li>
                         <li>5. 我们有权在必要时修改插件的功能、界面、使用方式等内容。</li>
-                        <li>6. 如果您对本插件有任何使用建议，请通过微信与 <span className="text-blue-500">AS</span> 联系或发送邮件告知我们 <a className="text-blue-500" href="mailto:feedback@aoq.me">feedback@aoq.me</a>。</li>
+                        <li>6. 如果您对本插件有任何使用建议，请通过微信与 <span className="text-blue-500">AS</span> 联系或发送邮件告知我们 <a className="text-blue-500" href="mailto:feedback@aow.me">feedback@aow.me</a>。</li>
                     </ul>
+                </div>,
+        },
+        {
+            title: <div class="font-bold leading-snug tracking-wide mb-1">赞赏后，如何获得升级码？
+            </div>,
+            content:
+                <div className="leading-8 mb-1">
+                    感谢您对开发者的支持，我们会继续努力！赞赏后，请将赞赏截图，并将截图发送邮件至：<span className="text-purple-600"> support@aow.me </span>
+                    我们收到邮件后，会立即回复您升级码！如果您未收到邮件回复的升级码，请微信联系：<span className="text-gray-600"> Asgrief </span>咨询。对于升级后的功能详情，请查看 <span className="text-blue-600"> https://docs.aow.me </span> 
                 </div>,
         },
         {
             title: <div class="font-bold leading-snug tracking-wide mb-1">使用插件时，显示“ChatGPT 网页链接异常"</div>,
             content:
                 <div className="leading-8 mb-1">
-                    如果你在使用插件时出现这个提示：<span className="text-gray-400">“ChatGPT 网页链接异常”，错误信息：CloudFlare</span>请选择使用API源。添加你的API-Key，继续使用。<br /> 同时，请注意：群聊版插件仅可以在客户端请求时响应，比如在手机微信中@登录微信昵称。
+                    如果你在使用插件时出现这个提示：<span className="text-blue-600">“ChatGPT 网页链接异常”，错误信息：CloudFlare</span>请选择使用API源。添加你的API-Key，继续使用。<br /> 同时，请注意：群聊版插件仅可以在客户端请求时响应，比如在手机微信中@登录微信昵称。
                 </div>,
         },
 
@@ -87,14 +96,6 @@ const data = {
                         <li>3. 因为 ChatGPT 自身的服务异常，导致请求出错或网络错误等原因。</li>
                         <li>4. 因为网络原因，如使用 VPN、加速器等导致频繁出现 Cloudflare 错误，需自行解决。</li>
                     </ul>
-                </div>,
-        },
-        {
-            title: <div class="font-bold leading-snug tracking-wide mb-1">为什么刷新微信页面后，会收到很多重复的提问消息？
-            </div>,
-            content:
-                <div className="leading-8 mb-1">
-                    这是一个 Bug，目前暂无修复方案。可以点击微信网页版页面，左侧头像旁边的三道横杠的图标，尝试关闭小铃铛解决。
                 </div>,
         },
     ],
