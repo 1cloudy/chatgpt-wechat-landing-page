@@ -43,11 +43,14 @@ function Header() {
           {/* Site navigation */}
           <nav className="flex flex-grow">
             <ul className="flex flex-grow justify-end flex-wrap items-center">
-              <li>
-                <a target="_blank" href="https://docs.aow.me" className="font-medium text-gray-600 hover:text-gray-900 px-4 py-3 flex items-center transition duration-150 ease-in-out">使用指南</a>
+             <li>
+                <a href="https://aoq.me" className="font-medium text-gray-600 hover:text-gray-900 px-4 py-3 flex items-center transition duration-150 ease-in-out">WhatsApp 版本</a>
               </li>
               <li>
                 <a href="https://chatgpt4filehelper.aow.me" className="font-medium text-gray-600 hover:text-gray-900 px-4 py-3 flex items-center transition duration-150 ease-in-out">个人助手版</a>
+              </li>
+              <li>
+                <a target="_blank" href="https://docs.aow.me" className="font-medium text-gray-600 hover:text-gray-900 px-4 py-3 flex items-center transition duration-150 ease-in-out">使用指南</a>
               </li>
               <li>
                 <a href="https://chat.aoq.me" className="font-medium text-gray-600 hover:text-gray-900 px-4 py-3 flex items-center transition duration-150 ease-in-out">加入社区</a>
