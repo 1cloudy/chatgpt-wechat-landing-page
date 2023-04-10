@@ -31,13 +31,13 @@ export default function Join() {
             <div className="flex flex-col items-center justify-center">
               <img
                 className="w-36 md:w-48 mx-auto rounded"
-                src={AliPayImage}
+                src={PrivateImage}
                 width="100%"
                 height="100%"
                 alt="个人微信"
                 loading="lazy"
               />
-              <div className="text-center pt-6 md:pt-8">支付宝赞赏码</div>
+              <div className="text-center pt-6 md:pt-8">插件支持</div>
             </div>
             <div className="flex flex-col items-center justify-center">
               <img
@@ -48,7 +48,7 @@ export default function Join() {
                 alt="个人微信"
                 loading="lazy"
               />
-              <div className="text-center pt-6 md:pt-8">微信赞赏码</div>
+              <div className="text-center pt-6 md:pt-8">支持开发者</div>
             </div>
           </div>
         </div>

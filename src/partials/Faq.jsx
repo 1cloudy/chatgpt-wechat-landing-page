@@ -40,15 +40,6 @@ const data = {
                 </div>,
         },
         {
-            title: <div class="font-bold leading-snug tracking-wide mb-1">赞赏后，如何获得升级码？
-            </div>,
-            content:
-                <div className="leading-8 mb-1">
-                    感谢您对开发者的支持，我们会继续努力！赞赏后，请将赞赏截图，并将截图发送邮件至：<span className="text-purple-600"> support@aow.me </span>
-                    我们收到邮件后，会立即回复您升级码！如果您未收到邮件回复的升级码，请微信联系：<span className="text-gray-600"> Asgrief </span>咨询。对于升级后的功能详情，请查看 <span className="text-blue-600"> https://docs.aow.me </span> 
-                </div>,
-        },
-        {
             title: <div class="font-bold leading-snug tracking-wide mb-1">使用插件时，显示“ChatGPT 网页链接异常"</div>,
             content:
                 <div className="leading-8 mb-1">
