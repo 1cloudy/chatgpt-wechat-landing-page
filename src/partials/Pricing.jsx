@@ -120,7 +120,7 @@ const PricingTable = () => (
 
               {item.name === "Basic" && (
                 <PlanButton
-                  url="https://aoq.lemonsqueezy.com/checkout?cart=7383c4ac-6a3c-46af-a4c9-7faa3ece0bc8"
+                  url="https://aoq.lemonsqueezy.com/checkout/buy/5a495255-6fd6-4997-841e-e061468eebf2"
                   bgColor="bg-blue-500"
                   hoverColor="focus:bg-blue-600"
                   text="支持开发者"
@@ -129,7 +129,7 @@ const PricingTable = () => (
 
               {isProPlan && (
                 <PlanButton
-                  url="https://aoq.lemonsqueezy.com/checkout?cart=7383c4ac-6a3c-46af-a4c9-7faa3ece0bc8"
+                  url="https://aoq.lemonsqueezy.com/checkout/buy/8b72467f-1d08-485c-9131-45f1478302ec"
               bgColor="bg-purple-600"
               hoverColor="focus:bg-purple-600"
               text="开始升级"
@@ -138,7 +138,7 @@ const PricingTable = () => (
 
           {item.name === "Max" && (
             <PlanButton
-              url="https://aoq.lemonsqueezy.com/checkout?cart=7383c4ac-6a3c-46af-a4c9-7faa3ece0bc8"
+              url="https://aoq.lemonsqueezy.com/checkout/buy/4e71571a-aec8-4bfb-84ae-f6cb9abec340"
               bgColor="bg-blue-500"
               hoverColor="focus:bg-blue-600"
               text="开始升级"
