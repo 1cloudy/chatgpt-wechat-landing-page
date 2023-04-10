@@ -52,7 +52,7 @@ function Header() {
               <li>
                 <a target="_blank" href="https://docs.aow.me" className="font-medium text-gray-600 hover:text-gray-900 px-4 py-3 flex items-center transition duration-150 ease-in-out">使用指南</a>
               </li>
-              <li>
+              <li className="!hidden">
                 <a href="https://chat.aoq.me" className="font-medium text-gray-600 hover:text-gray-900 px-4 py-3 flex items-center transition duration-150 ease-in-out">加入社区</a>
               </li>
             </ul>
