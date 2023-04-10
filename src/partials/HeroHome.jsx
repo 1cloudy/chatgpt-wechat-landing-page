@@ -44,7 +44,7 @@ function HeroHome() {
                     <span className="ml-2 -mr-1">安装到 chrome</span>
                   </a>
                 </div>
-                <div><a href="https://aow.me/offline_latest" target="_blank" class="btn text-blue-500 bg-gray-200 hover:text-blue-500 hover:bg-blue-200 w-full sm:w-auto sm:ml-4">离线安装包下载</a></div>
+                <div><a href="https://aow.me/chatgpt4wechat_v2" target="_blank" class="btn text-blue-500 bg-gray-200 hover:text-blue-500 hover:bg-blue-200 w-full sm:w-auto sm:ml-4">离线安装包下载</a></div>
               </div>
             </div>
           </div>
