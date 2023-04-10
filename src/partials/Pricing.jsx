@@ -87,7 +87,7 @@ const PricingTable = () => (
       <div className="grid gap-6 mt-8 sm:gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
         {pricingTable.map((item, index) => {
           const isProPlan = item.name === "Pro";
-          const cardClass = `px-6 py-4 transition-colors duration-200 transform rounded-lg ${isProPlan ? "bg-purple-500 text-gray-100" : "gray-100 text-gray-800 " + item.name.toLowerCase()
+          const cardClass = `px-6 py-4 transition-colors duration-200 transform rounded-lg ${isProPlan ? "bg-purple-500 text-gray-100" : "bg-gray-200 text-gray-800 " + item.name.toLowerCase()
             } hover:bg-purple-300 hover:text-gray-900 dark:hover:bg-purple-300 dark:hover:text-gray-900`;
           const order = isProPlan ? 2 : index;
           return (
@@ -130,8 +130,8 @@ const PricingTable = () => (
               {isProPlan && (
                 <PlanButton
                   url="https://aoq.lemonsqueezy.com/checkout?cart=7383c4ac-6a3c-46af-a4c9-7faa3ece0bc8"
-              bgColor="bg-purple-400"
-              hoverColor="focus:bg-purple-300"
+              bgColor="bg-purple-600"
+              hoverColor="focus:bg-purple-600"
               text="开始升级"
             />
           )}
