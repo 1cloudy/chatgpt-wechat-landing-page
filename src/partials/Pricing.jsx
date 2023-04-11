@@ -84,6 +84,7 @@ const PricingTable = () => (
     <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
       <div className="max-w-3xl mx-auto text-center pb-6 md:pb-8">
         <h1 className="text-2xl md:text-3xl lg:text-4xl mt-4 mb-4 tracking-wider">更多选择</h1>
+        <h2 className="text-xl underline text-purple-500"><a href="https://docs.aow.me/docs/account_management">升级必看</a></h2>
       </div>
 
       <div className="grid gap-6 mt-8 sm:gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
