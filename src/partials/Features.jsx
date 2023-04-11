@@ -67,7 +67,7 @@ function Features() {
               >
                 <div>
                   <div className="font-bold leading-snug tracking-wide mb-1">3. 触发 ChatGPT 应答微信消息</div>
-                  <div className="text-gray-600">在微信群组或私信中 <span className="text-blue-500">@你的昵称</span> 验证是否能收到 ChatGPT 的回复，注意问题字数需要超过2个字</div>
+                  <div className="text-gray-600">在微信群组中 <span className="text-blue-500">@你的昵称</span> 验证是否能收到 ChatGPT 的回复，注意问题字数需要超过2个字，私聊 MAX 用户可以免 @ 触发，其他版本需要 <span className="text-blue-500">@gpt</span></div>
                 </div>
               </a>
             </div>
