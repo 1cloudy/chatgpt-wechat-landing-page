@@ -40,6 +40,17 @@ const data = {
                 </div>,
         },
         {
+            title: <div class="font-bold leading-snug tracking-wide mb-1">想开通付费版，但不需要多开，只开一个Licesen，如何操作？
+            </div>,
+            content:
+                <div className="leading-8 mb-1">
+                    <ul className="list-decimal leading-8">
+                        <li>如果您只需1个License，可以点击此处<a className="tex-purple-500" href="https://aoq.lemonsqueezy.com/checkout/buy/8e5b8ecd-31fa-458b-a033-4e754d4c381a" target="_blank">购买单次激活码</a></li>
+                        <li>在购买成功后，复制激活码至插件升级。如果因初始操作不当，导致激活码失效，请微信联系 Asgrief 重新激活。</li>
+                    </ul>
+                </div>,
+        },
+        {
             title: <div class="font-bold leading-snug tracking-wide mb-1">使用插件时，显示“ChatGPT 网页链接异常"</div>,
             content:
                 <div className="leading-8 mb-1">
