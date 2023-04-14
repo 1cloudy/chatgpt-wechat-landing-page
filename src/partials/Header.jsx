@@ -16,7 +16,7 @@ function Header() {
 
   return (
     <header className={`fixed w-full z-30 md:bg-opacity-90 transition duration-300 ease-in-out ${!top && 'bg-white backdrop-blur-sm shadow-lg'}`}>
-      <div className="max-w-6xl mx-auto px-2 sm:px-6">
+      <div className="max-w-6xl mx-auto px-2 sm:px-6 mt-2">
         <div className="flex items-center justify-between h-16 md:h-16">
 
           {/* Site branding */}
@@ -43,17 +43,14 @@ function Header() {
           {/* Site navigation */}
           <nav className="flex flex-grow">
             <ul className="flex flex-grow justify-end flex-wrap items-center">
-             <li>
-                <a href="https://aoq.me" className="font-medium text-gray-600 hover:text-gray-900 px-4 py-3 flex items-center transition duration-150 ease-in-out">WhatsApp 版本</a>
+              <li>
+                <a href="https://aoq.me" className="font-medium text-gray-900 hover:text-gray-900 px-4 py-3 flex items-center transition duration-150 ease-in-out">WhatsApp 版本</a>
+              </li>
+              <li className="">
+                <Link to="/discover" className="font-medium text-gray-900 hover:text-gray-900 px-4 py-3 flex items-center transition duration-150 ease-in-out">发现机器人</Link>
               </li>
               <li>
-                <a href="https://chatgpt4filehelper.aow.me" className="font-medium text-gray-600 hover:text-gray-900 px-4 py-3 flex items-center transition duration-150 ease-in-out">个人助手版</a>
-              </li>
-              <li>
-                <a target="_blank" href="https://docs.aow.me" className="font-medium text-gray-600 hover:text-gray-900 px-4 py-3 flex items-center transition duration-150 ease-in-out">使用指南</a>
-              </li>
-              <li className="!hidden">
-                <a href="https://chat.aoq.me" className="font-medium text-gray-600 hover:text-gray-900 px-4 py-3 flex items-center transition duration-150 ease-in-out">加入社区</a>
+                <a target="_blank" href="https://docs.aow.me" className="font-medium text-gray-900 hover:text-gray-900 px-4 py-3 flex items-center transition duration-150 ease-in-out">使用指南</a>
               </li>
             </ul>
           </nav>

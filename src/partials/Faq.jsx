@@ -35,18 +35,7 @@ const data = {
                         <li>3. 本插件仅提供功能增强和便利性，我们不对插件使用过程中产生的任何问题和损失承担责任。</li>
                         <li>4. 本插件的版权归AOW.ME所有。未经许可，不得对插件进行修改、复制、分发或销售。</li>
                         <li>5. 我们有权在必要时修改插件的功能、界面、使用方式等内容。</li>
-                        <li>6. 如果您对本插件有任何使用建议，请通过微信与 <span className="text-blue-500">AS</span> 联系或发送邮件告知我们 <a className="text-blue-500" href="mailto:feedback@aow.me">feedback@aow.me</a>。</li>
-                    </ul>
-                </div>,
-        },
-        {
-            title: <div class="font-bold leading-snug tracking-wide mb-1">想开通付费版，但不需要多开，只开一个Licesen，如何操作？
-            </div>,
-            content:
-                <div className="leading-8 mb-1">
-                    <ul className="list-decimal leading-8">
-                        <li>如果您只需1个License，可以点击此处<a className="tex-purple-500" href="https://aoq.lemonsqueezy.com/checkout/buy/8e5b8ecd-31fa-458b-a033-4e754d4c381a" target="_blank">购买单次激活码</a></li>
-                        <li>在购买成功后，复制激活码至插件升级。如果因初始操作不当，导致激活码失效，请微信联系 Asgrief 重新激活。</li>
+                        <li>6. 如果您对本插件有任何使用建议，请发送邮件告知我们 <a className="text-blue-500" href="mailto:feedback@aow.me">feedback@aow.me</a>。</li>
                     </ul>
                 </div>,
         },

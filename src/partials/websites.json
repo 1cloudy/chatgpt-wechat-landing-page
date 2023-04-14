@@ -1,0 +1,155 @@
+[
+  {
+    "title": "微信机器人",
+    "items": [
+      {
+        "title": "ChatGPT3.5",
+        "tags": [
+          "both",
+          "24h",
+          "免费"
+        ],
+        "subtitle": "通用，机器人私聊微信号：lbw1385",
+        "logo": "https://assets.aow.me/tuotuo.png",
+        "url": "#"
+      },
+      {
+        "title": "HIGO",
+        "tags": [
+          "both",
+          "8～12h",
+          "免费"
+        ],
+        "subtitle": "通用",
+        "logo": "https://assets.aow.me/SAMUEL.png",
+        "url": "#"
+      },
+      {
+        "title": "yuyuan",
+        "tags": [
+          "私聊",
+          "24h",
+          "免费试用后付费"
+        ],
+        "subtitle": "脱口秀话题",
+        "logo": "https://assets.aow.me/shejibuluo.png",
+        "url": "#"
+      },
+      {
+        "title": "AI小助手",
+        "tags": [
+          "群聊",
+          "8～12h",
+          "免费"
+        ],
+        "subtitle": "AiGC",
+        "logo": "https://assets.aow.me/jaydenli.png",
+        "url": "#"
+      },
+      {
+        "title": "AI智能助手",
+        "tags": [
+          "私聊",
+          "24h",
+          "免费试用后付费"
+        ],
+        "subtitle": "通用",
+        "logo": "https://assets.aow.me/kuangzhuixiaomayi.png",
+        "url": "#"
+      },
+      {
+        "title": "小雨",
+        "tags": [
+          "both",
+          "24h",
+          "免费"
+        ],
+        "subtitle": "互联网",
+        "logo": "https://assets.aow.me/qingchengzuiyue.png",
+        "url": "#"
+      },
+      {
+        "title": "全能者",
+        "tags": [
+          "私聊",
+          "24h",
+          "免费"
+        ],
+        "subtitle": "你是全宇宙知识整理分类专业提取平台",
+        "logo": "https://assets.aow.me/pengfei.png",
+        "url": "#"
+      },
+      {
+        "title": "CCK Bot",
+        "tags": [
+          "both",
+          "24h",
+          "免费试用后收费"
+        ],
+        "subtitle": "CCK Bot",
+        "logo": "https://assets.aow.me/abc.png",
+        "url": "#"
+      },
+      {
+        "title": "芽芽",
+        "tags": [
+          "both",
+          "24h",
+          "免费"
+        ],
+        "subtitle": "通用，没训练过。3.5模型",
+        "logo": "https://assets.aow.me/dusai.png",
+        "url": "#"
+      },
+      {
+        "title": "AI联想未来",
+        "tags": [
+          "群聊",
+          "24h",
+          "免费"
+        ],
+        "subtitle": "全能",
+        "logo": "https://assets.aow.me/akuan.png",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "title": "WhatsApp 机器人",
+    "items": [
+      {
+        "title": "ChatGPT体验群",
+        "tags": [
+          "群聊",
+          "24h",
+          "免费"
+        ],
+        "subtitle": "通用，不定时切模型，使用方法：@gpt",
+        "logo": "https://assets.aow.me/aoqgroup.png",
+        "url": "https://aow.me/try"
+      },
+      {
+        "title": "gpt",
+        "tags": [
+          "私聊",
+          "24h",
+          "免费"
+        ],
+        "subtitle": "通用，不定时切模型",
+        "logo": "https://assets.aow.me/aoqgpt.png",
+        "url": "https://aow.me/try"
+      },
+      {
+        "title": "Asabot",
+        "tags": [
+          "私聊",
+          "8h",
+          "免费"
+        ],
+        "subtitle": "aoq.me 安装使用助手",
+        "logo": "https://assets.aow.me/asbot.png",
+        "url": "https://wa.me/8618601586458"
+      }
+    ]
+  }
+]
