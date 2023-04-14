@@ -80,32 +80,34 @@ const PlanButton = ({ url, bgColor, hoverColor, text }) => (
 );
 
 const PricingTable = () => (
-  <section id="pricing" className="relative pt-8 pb-8 bg-white">
+  <section className="relative mt-16" id="pricing">
     <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
       <div className="max-w-3xl mx-auto text-center pb-6 md:pb-8">
-        <h1 className="text-2xl md:text-3xl lg:text-4xl mt-4 mb-4 tracking-wider">更多选择</h1>
-        <h2 className="text-xl underline text-purple-500"><a href="https://docs.aow.me/docs/account_management">升级必看</a></h2>
+        <h1 className="h2 mb-4 tracking-wider">更多选择</h1>
+        <h2 className="text-xl underline text-purple-500">
+          <a href="https://docs.aow.me/docs/account_management">升级必看</a>
+        </h2>
       </div>
 
       <div className="grid gap-6 mt-8 sm:gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
         {pricingTable.map((item, index) => {
           const isProPlan = item.name === "Pro";
-          const cardClass = `px-6 py-4 transition-colors duration-200 transform rounded-lg ${isProPlan ? "bg-purple-500 text-gray-100" : "bg-gray-200 text-gray-800 " + item.name.toLowerCase()
-            } hover:bg-purple-300 hover:text-gray-900 dark:hover:bg-purple-300 dark:hover:text-gray-900`;
+          const cardClass = `px-6 py-4 transition-colors duration-200 transform rounded-lg ${
+            isProPlan
+              ? "bg-purple-500 text-gray-100"
+              : "bg-gray-200 text-gray-800 " + item.name.toLowerCase()
+          } hover:bg-purple-300 hover:text-gray-900 dark:hover:bg-purple-300 dark:hover:text-gray-900`;
           const order = isProPlan ? 2 : index;
           return (
-            <div
-              key={item.name}
-              className={cardClass}
-              style={{ order }}
-            >
+            <div key={item.name} className={cardClass} style={{ order }}>
               <div className="flex flex-row justify-between items-center">
                 <div className="text-xl md:text-2xl lg:text-3xl font-semibold">
                   {item.name}
                 </div>
                 <h4 className="mt-2 text-xl md:text-2xl lg:text-3xl font-semibold">
-                  {item.price} 
-                  {(item.name === "Max" || item.name === "Pro") && (<span className="text-sm">/月</span>
+                  {item.price}
+                  {(item.name === "Max" || item.name === "Pro") && (
+                    <span className="text-sm">/月</span>
                   )}
                 </h4>
               </div>
@@ -135,26 +137,25 @@ const PricingTable = () => (
               {isProPlan && (
                 <PlanButton
                   url="https://aoq.lemonsqueezy.com/checkout/buy/8b72467f-1d08-485c-9131-45f1478302ec"
-              bgColor="bg-purple-600"
-              hoverColor="focus:bg-purple-600"
-              text="开始升级"
-            />
-          )}
+                  bgColor="bg-purple-600"
+                  hoverColor="focus:bg-purple-600"
+                  text="开始升级"
+                />
+              )}
 
-          {item.name === "Max" && (
-            <PlanButton
-              url="https://aoq.lemonsqueezy.com/checkout/buy/4e71571a-aec8-4bfb-84ae-f6cb9abec340"
-              bgColor="bg-blue-500"
-              hoverColor="focus:bg-blue-600"
-              text="开始升级"
-            />
-          )}
-        </div>
-      );
-    })}
-  </div>
-</div>
+              {item.name === "Max" && (
+                <PlanButton
+                  url="https://aoq.lemonsqueezy.com/checkout/buy/4e71571a-aec8-4bfb-84ae-f6cb9abec340"
+                  bgColor="bg-blue-500"
+                  hoverColor="focus:bg-blue-600"
+                  text="开始升级"
+                />
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </div>
   </section>
 );
 export default PricingTable;
-

@@ -2,12 +2,12 @@ import React from "react";
 import PrivateImage from "../images/private.jpg";
 import GroupImage from "../images/group3.jpg";
 import TryImage from "../images/try.jpg";
-import WeChatPayImage from "../images/wxzsm.jpg"
-import AliPayImage from "../images/zfb.jpg"
+import WeChatPayImage from "../images/wxzsm.jpg";
+import AliPayImage from "../images/zfb.jpg";
 
 export default function Join() {
   return (
-    <section id="joinus" className="relative mt-12">
+    <section className="relative mt-16" id="joinus">
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
         {/* Section header */}
         <div className="max-w-3xl mx-auto text-center pb-6 md:pb-8">
@@ -16,7 +16,7 @@ export default function Join() {
 
         {/* Section content */}
         <div className="mb-16 md:mb-16">
-          <div class="grid grid-cols-3 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-3 md:grid-cols-3 gap-8">
             <div className="flex flex-col items-center justify-center">
               <img
                 className="w-36 md:w-48 mx-auto rounded"

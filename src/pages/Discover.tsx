@@ -12,13 +12,13 @@ function Discover() {
       </p>
 
       <div className="mb-8">
-        {websites.map(({ title, items }) => (
-          <div className="mb-8" key={title}>
+        {websites.map(({ title, items }, siteIndex) => (
+          <div className="mb-8" key={`site_${siteIndex}`}>
             <h4 className="mb-4 text-xl font-bold text-gray-900">{title}</h4>
 
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-              {items.map(({ title, tags, subtitle, logo, url }) => (
-                <a key={url} href={url} target="_blank" rel="noreferrer">
+              {items.map(({ title, tags, subtitle, logo, url }, itemIndex) => (
+                <a key={`link_${itemIndex}`} href={url} target="_blank" rel="noreferrer">
                   <div className="bg-white bg-surface-02dp border border-solid border-surface-02dp flex box-border p-4 h-32 rounded-lg hover:bg-gray-50 cursor-pointer w-full">
                     <div className="flex-grow flex flex-col justify-between">
                       <div>
@@ -30,9 +30,9 @@ function Discover() {
                         </div>
                       </div>
                       <div className="flex items-center space-x-2">
-                        {tags.map((tag) => (
+                        {tags.map((tag, tagIndex) => (
                           <span
-                            key={tag}
+                            key={`tag_${tagIndex}`}
                             className="inline-block bg-purple-100 text-gray-600 text-xs px-2 rounded-full uppercase tracking-wide"
                           >
                             {tag}
