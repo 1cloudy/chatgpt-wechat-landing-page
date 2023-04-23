@@ -69,7 +69,7 @@ export default function PricingTable() {
     <section id="pricing" className="relative pt-8 pb-8 bg-white">
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
         <div className="max-w-3xl mx-auto text-center pb-6 md:pb-8">
-          <h1 className="h2 mt-4 mb-4 tracking-wider">更多的选择</h1>
+          <h1 className="h2 mb-4 tracking-wider">更多的选择</h1>
         </div>
 
         <div className="grid gap-6 mt-8 sm:gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">

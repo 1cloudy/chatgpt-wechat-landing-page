@@ -4,7 +4,7 @@ import ChromeIcon from '../images/chrome.svg';
 
 function HeroHome() {
   return (
-    <section className="relative">
+    <section className="relative mt-16">
 
       {/* Illustration behind hero content */}
       <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none" aria-hidden="true">
@@ -27,8 +27,8 @@ function HeroHome() {
 
         {/* Hero content */}
         <div className="pt-24 pb-6 md:pt-40 md:pb-10">
-          <div className="max-w-5xl mx-auto text-center pb-6 md:pb-8">
-            <div className="bg-blue-100 rounded-md p-4 mb-4 !hidden">
+          <div className="max-w-5xl mx-auto text-center pb-6 md:pb-8 !hidden">
+            <div className="bg-blue-100 rounded-md p-4 mb-4">
               <span className="text-sm">无 ChatGPT 账号，在本站体验 ChatGPT 版本即将上线！开发者coding····</span><br />
             </div>
           </div>
