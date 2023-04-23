@@ -1,8 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Transition from '../utils/Transition';
 
-import FeaturesBg1 from '../images/features-wechat_web.jpg';
-import FeaturesBg2 from '../images/features-chatgpt.jpg';
+import FeaturesBg1 from '../images/aisource.png';
+import FeaturesBg2 from '../images/botset.png';
 import FeaturesBg3 from '../images/features-wechat_message.jpg';
 
 function Features() {
@@ -46,8 +46,8 @@ function Features() {
                 onClick={(e) => { e.preventDefault(); setTab(1); }}
               >
                 <div>
-                  <div className="font-bold leading-snug tracking-wide mb-1">1. 打开微信网页版页面</div>
-                  <div className="text-gray-600">通过 Chrome Store 安装最新版插件，通过此地址 <a className="text-blue-500" href="https://wx.qq.com/?target=t" target="_blank">https://wx.qq.com/?target=t</a> 访问微信网页版</div>
+                  <div className="font-bold leading-snug tracking-wide mb-1">1. 安装插件，配置AI源</div>
+                  <div className="text-gray-600">已支持AI源：ChatGPT、Google Bard、Bing Chat；使用AI源，需要打开AI源的网站并保持登录状态</div>
                 </div>
               </a>
               <a
@@ -56,8 +56,8 @@ function Features() {
                 onClick={(e) => { e.preventDefault(); setTab(2); }}
               >
                 <div>
-                  <div className="font-bold leading-snug tracking-wide mb-1">2. 打开 ChatGPT 的页面</div>
-                  <div className="text-gray-600">如果有 ChatGPT 账号，请保持页面 <a className="text-blue-500" href="https://chat.openai.com/chat" target="_blank">https://chat.openai.com</a> 处于登录状态</div>
+                  <div className="font-bold leading-snug tracking-wide mb-1">2. 设置 bot 参数</div>
+                  <div className="text-gray-600">根据需要设置参数，bot默认开启状态。设置完成后点击插件小图标，查看连接状态。</div>
                 </div>
               </a>
               <a
@@ -67,7 +67,7 @@ function Features() {
               >
                 <div>
                   <div className="font-bold leading-snug tracking-wide mb-1">3. 触发 ChatGPT 应答微信消息</div>
-                  <div className="text-gray-600">在微信群组中 <span className="text-blue-500">@你的昵称</span> 验证是否能收到 ChatGPT 的回复，注意问题字数需要超过2个字，私聊 MAX 用户可以免 @ 触发，其他版本需要 <span className="text-blue-500">@gpt</span></div>
+                  <div className="text-gray-600">微信群聊/私聊，需<a className="text-blue-500" href="https://wx.qq.com/?target=t" target="_blank">登录微信网页版，</a>使用方法：在手机微信群中<span className="text-blue-500">@登录微信昵称 问题</span>；仅自己使用，登录<a className="text-blue-500" href="https://filehelper.weixin.qq.com/" target="_blank">文件传输助手</a>，命令： <span className="text-blue-500">@gpt</span></div>
                 </div>
               </a>
             </div>

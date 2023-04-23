@@ -36,7 +36,7 @@ function HeroHome() {
           <div className="text-center pb-6 md:pb-8">
             <h1 className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">ChatGPT for <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">Wechat</span></h1>
             <div className="max-w-3xl mx-auto">
-              <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">一个 Chrome 浏览器插件，通过 ChatGPT 来自动响应微信私信或群聊中 <span className="bg-clip-text text-primary">@你</span> 的消息的智能聊天机器人</p>
+              <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">一个 Chrome 浏览器插件，通过 ChatGPT 来自动响应微信私信、群聊、文件传输助手中 <span className="bg-clip-text text-primary">@你</span> 的消息的智能聊天机器人</p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
                 <div>
                   <a className="btn text-white bg-blue-500 transition duration-300 ease-in-out  w-full mb-4 sm:w-auto sm:mb-0" target="_blank" href="https://chrome.google.com/webstore/detail/chatgpt-for-wechat/cdlangplaophialnpfbdfndiobanklfd">
@@ -44,7 +44,7 @@ function HeroHome() {
                     <span className="ml-2 -mr-1">安装到 chrome</span>
                   </a>
                 </div>
-                <div><a href="https://aow.me/chatgpt4wechat_v2" target="_blank" class="btn text-gray-900 bg-purple-200 hover:text-purple-500 hover:bg-purple-200 w-full sm:w-auto sm:ml-4">离线安装包下载（最新版4.1.2）</a></div>
+                <div><a href="https://aow.me/chatgpt4wechat_v2" target="_blank" class="btn text-gray-900 bg-purple-200 hover:text-purple-500 hover:bg-purple-200 w-full sm:w-auto sm:ml-4">离线安装包下载</a></div>
               </div>
             </div>
           </div>
