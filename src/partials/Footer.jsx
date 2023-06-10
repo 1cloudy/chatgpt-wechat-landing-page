@@ -28,7 +28,7 @@ function Footer() {
             </li>
             <li className="ml-4">
               <a
-                href="https://github.com/1cloudy/chatgpt-wechat-landing-page"
+                href="https://github.com/maooson/chatgpt-filehelper-extension"
                 target="_blank"
                 className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
                 aria-label="Github"
