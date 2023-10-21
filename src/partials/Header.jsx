@@ -43,6 +43,9 @@ function Header() {
           {/* Site navigation */}
           <nav className="flex flex-grow">
             <ul className="flex flex-grow justify-end flex-wrap items-center">
+            <li className="">
+                <Link to="https://docs.aow.me/docs/social_auto_post" className="font-medium text-gray-900 hover:text-gray-900 px-4 py-3 flex items-center transition duration-150 ease-in-out">SocialAutoPost【New】</Link>
+              </li>
               <li className="">
                 <Link to="https://chatgpt4filehelper.aow.me/" className="font-medium text-gray-900 hover:text-gray-900 px-4 py-3 flex items-center transition duration-150 ease-in-out">微信个人助手版本</Link>
               </li>

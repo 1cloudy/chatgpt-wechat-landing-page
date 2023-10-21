@@ -31,38 +31,36 @@ const pricingTable = [
     features: [
       "支持ChatGPT 网页端",
       "支持ChatGPT API",
-      "API支持上下文",
+      "🌟 支持Goolge Bard 【推荐】",
       "单用户提问 10分钟10次",
       "单群组提问 1天50次",
       "入群欢迎语",
+      "一键开启bot"
     ],
   },
   {
     name: "Pro",
-    price: "¥100",
+    price: "¥79",
     description: "专业版",
     features: [
-      "🌟 定义AI身份/角色",
-      "🌟 支持 Google Bard",
-      "🌟 一键开启bot",
-      "🌟 群组用户提问无限制",
+      "🌟 自定义AI身份/角色",
+      "🌟 支持Bing Chat",
+      "🌟 用户提问无限制",
       "🌟 群组提问无限制",
       "🌟 管理队列积压告警阈值",
-      "License 可激活3次",
+      "🌟 私聊直接触发",
+      "License 可激活2次",
     ],
   },
   {
     name: "Max",
-    price: "¥300",
+    price: "¥199",
     description: "高级版",
     features: [
       "含 Pro 版本所有功能",
-      "🌟 支持 Bing Chat",
-      "切换多个 Bing Chat 对话模式",
-      "🌟 私聊直接触发",
       "🌟 自定义代理服务器",
-      "🌟 定制消息模版（无AD）",
-      "License 可激活3次",
+      "🌟 多个 Bing Chat 对话模式",
+      "License 可激活2次",
     ],
   },
 ];
@@ -106,7 +104,10 @@ const PricingTable = () => (
                 </div>
                 <h4 className="mt-2 text-xl md:text-2xl lg:text-3xl font-semibold">
                   {item.price}
-                  {(item.name === "Max" || item.name === "Pro") && (
+                  {(item.name === "Max") && (
+                    <span className="text-sm">/季</span>  
+                  )}
+                  {(item.name === "Pro") && (
                     <span className="text-sm">/月</span>
                   )}
                 </h4>
