@@ -59,7 +59,7 @@ function Features() {
               >
                 <div>
                   <div className="font-bold leading-snug tracking-wide mb-1">1. 安装插件，配置AI源</div>
-                  <div className="text-gray-600">已支持AI源：ChatGPT、Google Bard、Bing Chat；使用AI源，需要打开AI源的网站并保持登录状态</div>
+                  <div className="text-gray-600">已支持AI源：ChatGPT、Google Bard；使用AI源，需要打开AI源的网站并保持登录状态</div>
                 </div>
               </div>
               <div
