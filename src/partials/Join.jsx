@@ -37,7 +37,7 @@ export default function Join() {
                 alt="个人微信"
                 loading="lazy"
               />
-              <div className="text-center pt-6 md:pt-8">插件支持</div>
+              <div className="text-center pt-6 md:pt-8">插件支持[免费用需先打赏再咨询]</div>
             </div>
             <div className="flex flex-col items-center justify-center">
               <img
