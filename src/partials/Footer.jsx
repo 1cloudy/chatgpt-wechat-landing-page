@@ -37,7 +37,7 @@ function Footer() {
             </li>
           </ul>
 
-          <div className="text-sm text-gray-600 mr-4">
+          <div className="text-sm text-gray-600 mr-4 flex flex-wrap items-center gap-2">
             Made by{' '}
             <a className="text-pink-600 hover:underline" href="https://aow.me/" target="_blank" rel="noreferrer">
               aow.me
@@ -46,12 +46,17 @@ function Footer() {
             <a className="text-pink-600 hover:underline" href="https://aow.me/disclaimer" target="_blank" rel="noreferrer">
               免责声明
             </a>
-            {' '}| 友情链接：
-            <a className="text-pink-600 hover:underline ml-1" href="https://diggx.nian.me" target="_blank" rel="noreferrer">
-              diggx.nian.me
+            <span className="text-gray-400">|</span>
+            <a className="text-pink-600 hover:underline" href="https://diggx.nian.me" target="_blank" rel="noreferrer">
+              推文助手
             </a>
-            <a className="text-pink-600 hover:underline ml-2" href="https://notes.nian.me" target="_blank" rel="noreferrer">
-              notes.nian.me
+            <span className="text-gray-400">|</span>
+            <a className="text-pink-600 hover:underline" href="https://notes.nian.me" target="_blank" rel="noreferrer">
+              缪斯笔记
+            </a>
+            <span className="text-gray-400">|</span>
+            <a className="text-pink-600 hover:underline" href="https://shortcut.nian.me" target="_blank" rel="noreferrer">
+              精选快捷指令
             </a>
           </div>
         </div>
