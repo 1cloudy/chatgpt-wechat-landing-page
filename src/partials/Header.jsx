@@ -14,12 +14,11 @@ function Header() {
 
   return (
     <header
-      className={`fixed w-full z-30 transition duration-300 ease-in-out ${
-        !top ? 'bg-white/90 backdrop-blur-sm shadow-md' : 'bg-transparent'
-      }`}
+      className={`fixed w-full z-30 transition duration-300 ease-in-out ${!top ? 'bg-white/90 backdrop-blur-sm shadow-md' : 'bg-transparent'
+        }`}
     >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 mt-3 mb-3">
-        <div className="rounded-xl border border-pink-100 bg-gradient-to-r from-white via-pink-50 to-purple-50 px-3 sm:px-4 h-16 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="h-16 flex items-center justify-between">
           <div className="flex-shrink-0 mr-4">
             <Link to="/" className="inline-flex items-center gap-2" aria-label="ChatGPT for WeChat">
               <svg className="w-8 h-8" width="192" height="192" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg">
