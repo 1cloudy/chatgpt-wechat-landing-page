@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
-import { Routes, Route, Link, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import 'aos/dist/aos.css';
 import './css/style.css';
 import AOS from 'aos';
 import Home from './pages/Home';
 import Discover from './pages/Discover';
-import Header from './partials/Header'; // 修改为您的 Header 组件的实际路径
+import Header from './partials/Header';
 
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
       duration: 700,
       easing: 'ease-out-cubic',
     });
-  });
+  }, []);
 
   useEffect(() => {
     document.querySelector('html').style.scrollBehavior = 'auto';
@@ -28,10 +28,8 @@ function App() {
 
   return (
     <>
-      {/* 添加导航链接 */}
-       <Header />
+      <Header />
 
-      {/* 配置路由 */}
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/discover" element={<Discover />} />

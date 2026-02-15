@@ -1,15 +1,12 @@
 import React from 'react';
 
-import Header from '../partials/Header';
 import HeroHome from '../partials/HeroHome';
 import FeaturesHome from '../partials/Features';
 import Footer from '../partials/Footer';
 import Join from '../partials/Join';
 import FAQ from '../partials/Faq';
 import PricingTable from '../partials/Pricing';
-import Pricing2 from '../partials/Pricing2';
 import Popup from '../partials/Popup';
-import ReactDOM from 'react-dom';
 import VideoPlayer from '../partials/VideoPlayer';
 
 function Home() {
@@ -20,8 +17,8 @@ function Home() {
 
         {/*  Page sections */}
         <HeroHome />
-        <VideoPlayer />
         <FeaturesHome />
+        <VideoPlayer />
         {/* <Pricing /> */}
         <PricingTable />
         <Join />

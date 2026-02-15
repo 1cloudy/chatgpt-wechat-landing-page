@@ -2,29 +2,28 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 function Header() {
-
   const [top, setTop] = useState(true);
 
-  // detect whether user has scrolled the page down by 10px 
   useEffect(() => {
     const scrollHandler = () => {
-      window.pageYOffset > 10 ? setTop(false) : setTop(true)
+      setTop(window.pageYOffset <= 10);
     };
     window.addEventListener('scroll', scrollHandler);
     return () => window.removeEventListener('scroll', scrollHandler);
-  }, [top]);
+  }, []);
 
   return (
-    <header className={`fixed w-full z-30 md:bg-opacity-90 transition duration-300 ease-in-out ${!top && 'bg-white backdrop-blur-sm shadow-lg'}`}>
-      <div className="max-w-6xl mx-auto px-2 sm:px-6 mt-2">
-        <div className="flex items-center justify-between h-16 md:h-16">
-
-          {/* Site branding */}
+    <header
+      className={`fixed w-full z-30 transition duration-300 ease-in-out ${
+        !top ? 'bg-white/90 backdrop-blur-sm shadow-md' : 'bg-transparent'
+      }`}
+    >
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 mt-3 mb-3">
+        <div className="rounded-xl border border-pink-100 bg-gradient-to-r from-white via-pink-50 to-purple-50 px-3 sm:px-4 h-16 flex items-center justify-between">
           <div className="flex-shrink-0 mr-4">
-            {/* Logo */}
-            <Link to="/" className="block" aria-label="ChatGPT for Wechat">
+            <Link to="/" className="inline-flex items-center gap-2" aria-label="ChatGPT for WeChat">
               <svg className="w-8 h-8" width="192" height="192" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="192" height="192" rx="40" fill="#C571F8" />
+                <rect width="192" height="192" rx="40" fill="#d946ef" />
                 <g clipPath="url(#clip0_2_14)">
                   <path d="M96 96C98.7154 96 100.917 93.7987 100.917 91.0833C100.917 88.3679 98.7154 86.1667 96 86.1667C93.2846 86.1667 91.0833 88.3679 91.0833 91.0833C91.0833 93.7987 93.2846 96 96 96Z" fill="white" />
                   <path d="M115.667 96C118.382 96 120.583 93.7987 120.583 91.0833C120.583 88.3679 118.382 86.1667 115.667 86.1667C112.951 86.1667 110.75 88.3679 110.75 91.0833C110.75 93.7987 112.951 96 115.667 96Z" fill="white" />
@@ -37,23 +36,51 @@ function Header() {
                   </clipPath>
                 </defs>
               </svg>
+              <span className="font-semibold text-gray-900 hidden sm:inline">ChatGPT for WeChat</span>
             </Link>
           </div>
 
-          {/* Site navigation */}
-          <nav className="flex flex-grow">
-            <ul className="flex flex-grow justify-end flex-wrap items-center">
-            <li className="">
-                <Link to="https://docs.aow.me/docs/social_auto_post" className="font-medium text-gray-900 hover:text-gray-900 px-4 py-3 flex items-center transition duration-150 ease-in-out">SocialAutoPost【New】</Link>
-              </li>
-              <li className="">
-                <Link to="https://chatgpt4filehelper.aow.me/" className="font-medium text-gray-900 hover:text-gray-900 px-4 py-3 flex items-center transition duration-150 ease-in-out">微信个人助手版本</Link>
+          <nav className="flex flex-grow justify-end">
+            <ul className="flex flex-wrap items-center gap-1 sm:gap-2 text-sm sm:text-base">
+              <li>
+                <a
+                  href="https://docs.aow.me/docs/social_auto_post"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="font-medium text-gray-700 hover:text-pink-600 px-2 sm:px-3 py-2 rounded-lg hover:bg-pink-50 transition"
+                >
+                  SocialAutoPost
+                </a>
               </li>
               <li>
-                <a href="https://aoq.me" className="font-medium text-gray-900 hover:text-gray-900 px-4 py-3 flex items-center transition duration-150 ease-in-out">WhatsApp 版本</a>
+                <a
+                  href="https://chatgpt4filehelper.aow.me/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="font-medium text-gray-700 hover:text-pink-600 px-2 sm:px-3 py-2 rounded-lg hover:bg-pink-50 transition"
+                >
+                  个人助手版
+                </a>
+              </li>
+              <li className="hidden md:block">
+                <a
+                  href="https://aoq.me"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="font-medium text-gray-700 hover:text-pink-600 px-2 sm:px-3 py-2 rounded-lg hover:bg-pink-50 transition"
+                >
+                  WhatsApp 版本
+                </a>
               </li>
               <li>
-                <a target="_blank" href="https://docs.aow.me" className="font-medium text-gray-900 hover:text-gray-900 px-4 py-3 flex items-center transition duration-150 ease-in-out">使用指南</a>
+                <a
+                  href="https://docs.aow.me"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="font-medium text-white bg-pink-600 hover:bg-pink-700 px-3 sm:px-4 py-2 rounded-lg transition"
+                >
+                  使用指南
+                </a>
               </li>
             </ul>
           </nav>

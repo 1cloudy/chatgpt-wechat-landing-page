@@ -1,240 +1,55 @@
-import React from "react";
-import Faq from "react-faq-component";
+import React from 'react';
+import Faq from 'react-faq-component';
 
 const data = {
   rows: [
     {
-      title: (
-        <div className="font-bold leading-snug tracking-wide mb-1">
-          ChatGPT 是什么？
-        </div>
-      ),
+      title: <div className="font-semibold">插件适合什么场景？</div>,
+      content: '适用于微信群聊、私聊与文件传输助手中的高频问答、客服回复、运营助手等场景。',
+    },
+    {
+      title: <div className="font-semibold">需要自己搭建服务器吗？</div>,
+      content: '不需要。插件在浏览器侧运行，完成登录和参数配置后即可开始使用。',
+    },
+    {
+      title: <div className="font-semibold">为什么 @机器人 没有响应？</div>,
+      content:
+        '请先检查插件连接状态、AI 源登录状态，以及提问字数是否达标。若仍失败，建议刷新页面并重试。',
+    },
+    {
+      title: <div className="font-semibold">微信网页版提示无法登录怎么办？</div>,
       content: (
-        <div className="leading-8 mb-1">
-          <p>ChatGPT 是由 OpenAI 开发的一种大型自然语言处理（NLP）模型</p>
-          <ul className="list-decimal leading-8">
-            <li>
-              1.
-              可以回答关于各种话题的问题，例如历史、科学、文化等。它可以提供相关的信息和细节，并且能够根据上下文作出适当的回应。
-            </li>
-            <li>
-              2.
-              可以参与自然对话，即能够与人类进行多轮交流，并作出相应的回应。它可以通过文本或语音与人类交流，并理解他们的意图，从而使对话更加流畅自然。
-            </li>
-            <li>
-              3.
-              可以提供建议和帮助，例如在人类面临某些问题或困难时，它可以提供可行的解决方案。它可以理解人类的需求，并根据他们的问题提供适当的帮助。
-            </li>
-            <li>
-              4.
-              可以作为学习工具，即人类可以通过与它交流来提高他们的语言能力和知识水平。它可以提供丰富的信息和知识，并且能够持续不断地学习和更新，从而为人类提供更多的学习机会。
-            </li>
-            <li>
-              5.
-              可以作为客服或人工智能助手使用，即能够与人类进行交流，并帮助他们解决问题。它可以用于提供客户服务或帮助人们完成日常任务，从而提高工作效率和满意度。
-            </li>
-          </ul>
-        </div>
+        <span>
+          可尝试带参数访问{' '}
+          <a className="text-pink-600 underline" href="https://wx.qq.com/?target=t" target="_blank" rel="noreferrer">
+            https://wx.qq.com/?target=t
+          </a>
+          ，并从插件页面入口重新登录。
+        </span>
       ),
     },
     {
-      title: (
-        <div className="font-bold leading-snug tracking-wide mb-1">
-          这个插件可以用来做什么？
-        </div>
-      ),
+      title: <div className="font-semibold">是否支持商业使用？</div>,
       content: (
-        <div className="leading-8 mb-1">
-          这个插件可以帮助你快速搭建一个基于微信聊天的智能应答机器人，不需要任何服务器资源，只需要登录微信网页版页面和
-          ChatGPT 页面<span className="text-green-500">（推荐）</span>或配置
-          OpenAI apikey 即可。
-        </div>
+        <span>
+          默认协议以个人使用为主。商业场景请先阅读{' '}
+          <a className="text-pink-600 underline" href="https://aow.me/tos" target="_blank" rel="noreferrer">
+            用户协议
+          </a>
+          与{' '}
+          <a className="text-pink-600 underline" href="https://aow.me/disclaimer" target="_blank" rel="noreferrer">
+            免责声明
+          </a>
+          ，如需授权请联系 support。
+        </span>
       ),
     },
     {
-      title: (
-        <div className="font-bold leading-snug tracking-wide mb-1">
-          使用这个插件我该注意点什么？
-        </div>
-      ),
+      title: <div className="font-semibold">如何获取更多使用文档？</div>,
       content: (
-        <div className="leading-8 mb-1">
-          <ul className="list-decimal leading-8">
-            <li>
-              1. 使用本插件前，请您仔细阅读本插件
-              <a
-                className="text-blue-500"
-                href="https://aow.me/tos"
-                target="_blank"
-              >
-                用户协议
-              </a>
-              和
-              <a
-                className="text-blue-500"
-                href="https://aow.me/disclaimer"
-                target="_blank"
-              >
-                免责声明
-              </a>
-              ，如果您不同意该协议或声明，请立即卸载或删除本插件。
-            </li>
-            <li>
-              2.
-              本插件仅供个人使用，不得用于任何商业用途，包括但不限于付费微信群、企业微信群等。如果您需要商业使用本插件，请联系我们进行授权。联系方式：
-              <a className="text-blue-500" href="mailto:contact@aow.me">
-                contact@aow.me
-              </a>
-            </li>
-            <li>
-              3.
-              本插件仅提供功能增强和便利性，我们不对插件使用过程中产生的任何问题和损失承担责任。
-            </li>
-            <li>
-              4.
-              本插件的版权归AOW.ME所有。未经许可，不得对插件进行修改、复制、分发或销售。
-            </li>
-            <li>5. 我们有权在必要时修改插件的功能、界面、使用方式等内容。</li>
-            <li>
-              6. 如果您对本插件有任何使用建议，请发送邮件告知我们{" "}
-              <a className="text-blue-500" href="mailto:feedback@aow.me">
-                feedback@aow.me
-              </a>
-              。
-            </li>
-          </ul>
-        </div>
-      ),
-    },
-    {
-      title: (
-        <div className="font-bold leading-snug tracking-wide mb-1">
-          使用插件时，显示“ChatGPT 网页链接异常"
-        </div>
-      ),
-      content: (
-        <div className="leading-8 mb-1">
-          如果你在使用插件时出现这个提示：
-          <span className="text-blue-600">
-            “ChatGPT 网页链接异常”，错误信息：CloudFlare
-          </span>
-          请选择使用API源。添加你的API-Key，继续使用。
-          <br />{" "}
-          同时，请注意：群聊版插件仅可以在客户端请求时响应，比如在手机微信中@登录微信昵称。
-        </div>
-      ),
-    },
-
-    {
-      title: (
-        <div className="font-bold leading-snug tracking-wide mb-1">
-          微信网页版无法登录怎么办？
-        </div>
-      ),
-      content: (
-        <div className="leading-8 mb-1">
-          如果你在访问微信网页版时出现这个提示：
-          <span className="text-gray-400">
-            “为了保障你的帐号安全，暂不支持使用网页版微信。你可以前往微信官网
-            https://weixin.qq.com/ 下载客户端登录。”
-          </span>
-          。<br />
-          请按照以下步骤操作：
-          <ul className="list-decimal leading-8">
-            <li>
-              1. 打开微信网页版页面，地址：
-              <a
-                className="text-blue-500"
-                href="https://wx.qq.com/?target=t"
-                target="_blank"
-              >
-                https://wx.qq.com/<b>?target=t</b>
-              </a>
-              。
-              <span className="text-yellow-500">
-                注意：务必带上后面的请求参数！
-              </span>
-            </li>
-            <li>
-              2. 请通过插件设置页面右上角，点击
-              <span className="text-green-400">微信网页版</span>登录后，使用。
-            </li>
-          </ul>
-        </div>
-      ),
-    },
-    {
-      title: (
-        <div className="font-bold leading-snug tracking-wide mb-1">
-          为什么@机器人，但是没有任何响应？
-        </div>
-      ),
-      content: (
-        <div className="leading-8 mb-1">
-          <ul className="list-decimal leading-8">
-            <li>
-              1. 请在 Chrome 浏览器导航栏找到本插件的图标，点击图标，看弹窗中的
-              ChatGPT
-              页面是否处于登录状态。如果未登录，请尝试多点击几次插件图标。
-            </li>
-            <li>
-              2.
-              插件对提问字数做了限制，问题内容（不包括@昵称）需要超过2个字符才会触发
-              ChatGPT 的响应。
-            </li>
-            <li>
-              3.
-              检查自己的微信昵称中是否存在表情符号或其他特殊字符，如果存在请修改为简单的昵称，建议只用数字、字母或中文，修改完毕后刷新微信网页版页面。
-            </li>
-          </ul>
-        </div>
-      ),
-    },
-    {
-      title: (
-        <div className="font-bold leading-snug tracking-wide mb-1">
-          为什么@机器人的消息要好久才收到，感觉响应很慢？
-        </div>
-      ),
-      content: (
-        <div className="leading-8 mb-1">
-          因为 ChatGPT
-          的响应是异步数据流，在网页上可以实时刷新数据流响应，但在微信消息中只能等收到完整结果后一次发送，所以体验上感觉会有30秒左右的延迟，具体视
-          ChatGPT 的响应内容多少而定，这是正常现象。
-        </div>
-      ),
-    },
-    {
-      title: (
-        <div className="font-bold leading-snug tracking-wide mb-1">
-          为什么会收到“抱歉，ChatGPT 服务异常”的消息？
-        </div>
-      ),
-      content: (
-        <div className="leading-8 mb-1">
-          <p>以下几种情况可能导致返回上面的错误提示：</p>
-          <ul className="list-decimal leading-8">
-            <li>
-              1. 因为 ChatGPT 加了 Cloudflare 保护，每隔2小时需要刷新一下
-              ChatGPT 页面，如果用户提问后收到上述错误提示，说明
-              <a href="https://chat.openai.com/chat" target="_blank">
-                https://chat.openai.com/chat
-              </a>
-              页面需要刷新或重新登录。
-            </li>
-            <li>
-              2. 因为 ChatGPT
-              的并发限制，一次只能发送一条消息。请在发送另一条消息之前等待其他问题的响应完成，或者等待一分钟。
-            </li>
-            <li>
-              3. 因为 ChatGPT 自身的服务异常，导致请求出错或网络错误等原因。
-            </li>
-            <li>
-              4. 因为网络原因，如使用 VPN、加速器等导致频繁出现 Cloudflare
-              错误，需自行解决。
-            </li>
-          </ul>
-        </div>
+        <a className="text-pink-600 underline" href="https://docs.aow.me" target="_blank" rel="noreferrer">
+          打开使用指南与更新文档
+        </a>
       ),
     },
   ],
@@ -242,15 +57,14 @@ const data = {
 
 export default function FAQ() {
   return (
-    <section className="relative mt-16">
+    <section className="relative mt-20" id="faq">
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
-        {/* Section header */}
         <div className="max-w-3xl mx-auto text-center pb-6 md:pb-8">
-          <h1 className="h2 mb-4 tracking-wider">常见问题</h1>
+          <p className="text-xs uppercase tracking-[0.2em] font-semibold text-pink-600">FAQ</p>
+          <h2 className="mt-3 text-3xl md:text-4xl font-bold tracking-tight">常见问题</h2>
         </div>
 
-        {/* Section content */}
-        <div className="mb-16 md:mb-16">
+        <div className="mb-16 rounded-2xl border border-pink-100 bg-white p-4 sm:p-6 shadow-sm">
           <Faq data={data} />
         </div>
       </div>

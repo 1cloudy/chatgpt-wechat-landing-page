@@ -1,5 +1,5 @@
-import React, { useState, useRef, useEffect } from "react";
-import Transition from "../utils/Transition";
+import React, { useState, useRef, useEffect } from 'react';
+import Transition from '../utils/Transition';
 
 import FeaturesBg1 from '../images/aisource.png';
 import FeaturesBg2 from '../images/botset.png';
@@ -7,106 +7,76 @@ import FeaturesBg3 from '../images/features-wechat_message.jpg';
 
 function Features() {
   const [tab, setTab] = useState(1);
-
   const tabs = useRef(null);
 
   const heightFix = () => {
-    if (tabs.current.children[tab]) {
-      tabs.current.style.height =
-        tabs.current.children[tab - 1].offsetHeight + "px";
+    if (!tabs.current) return;
+    const tabElement = tabs.current.children[tab - 1];
+    if (tabElement) {
+      tabs.current.style.height = `${tabElement.offsetHeight}px`;
     }
   };
 
   useEffect(() => {
     heightFix();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [tab]);
 
   return (
-    <section className="relative mt-16">
-      {/* Section background (needs .relative class on parent and next sibling elements) */}
-      <div
-        className="absolute inset-0 bg-gray-100 pointer-events-none"
-        aria-hidden="true"
-      ></div>
+    <section className="relative mt-20" id="how-it-works">
+      <div className="absolute inset-0 bg-gradient-to-b from-white to-pink-50/40 pointer-events-none" aria-hidden="true"></div>
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
-        {/* Section header */}
-        <div className="max-w-3xl mx-auto text-center pb-6 md:pb-8">
-          <h1 className="h2 mb-4 tracking-wider">如何使用</h1>
+        <div className="max-w-3xl mx-auto text-center pb-6 md:pb-10">
+          <p className="text-xs uppercase tracking-[0.2em] font-semibold text-pink-600">How It Works</p>
+          <h2 className="mt-3 text-3xl md:text-4xl font-bold tracking-tight">三步启动你的微信 AI 助手</h2>
+          <p className="mt-4 text-gray-600">从安装到上线，用最短路径完成配置并开始稳定使用。</p>
         </div>
 
-        {/* Section content */}
-        <div className="md:grid md:grid-cols-12 md:gap-6">
-          {/* Content */}
-          <div
-            className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-6 lg:col-span-5"
-            data-aos="fade-right"
-          >
-            {/* Tabs buttons */}
+        <div className="md:grid md:grid-cols-12 md:gap-8 items-start">
+          <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-6 lg:col-span-5" data-aos="fade-right">
             <div className="mb-8 md:mb-0">
-              <div
-                className={`flex cursor-pointer items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
-                  tab !== 1
-                    ? "bg-white shadow-md border-gray-200 hover:shadow-lg"
-                    : "bg-gray-200 border-transparent"
-                }`}
-                href="#0"
-                onClick={(e) => {
-                  e.preventDefault();
-                  setTab(1);
-                }}
-              >
-                <div>
-                  <div className="font-bold leading-snug tracking-wide mb-1">1. 安装插件，配置AI源</div>
-                  <div className="text-gray-600">已支持AI源：ChatGPT、Google Bard；使用AI源，需要打开AI源的网站并保持登录状态</div>
-                </div>
-              </div>
-              <div
-                className={`flex cursor-pointer items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
-                  tab !== 2
-                    ? "bg-white shadow-md border-gray-200 hover:shadow-lg"
-                    : "bg-gray-200 border-transparent"
-                }`}
-                href="#0"
-                onClick={(e) => {
-                  e.preventDefault();
-                  setTab(2);
-                }}
-              >
-                <div>
-                  <div className="font-bold leading-snug tracking-wide mb-1">2. 设置 bot 参数</div>
-                  <div className="text-gray-600">根据需要设置参数，bot默认开启状态。设置完成后点击插件小图标，查看连接状态。</div>
-                </div>
-              </div>
-              <div
-                className={`flex cursor-pointer items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
-                  tab !== 3
-                    ? "bg-white shadow-md border-gray-200 hover:shadow-lg"
-                    : "bg-gray-200 border-transparent"
-                }`}
-                href="#0"
-                onClick={(e) => {
-                  e.preventDefault();
-                  setTab(3);
-                }}
-              >
-                <div>
-                  <div className="font-bold leading-snug tracking-wide mb-1">3. 触发 ChatGPT 应答微信消息</div>
-                  <div className="text-gray-600">微信群聊/私聊，需<a className="text-blue-500" href="https://wx.qq.com/?target=t" target="_blank">登录微信网页版，</a>使用方法：在手机微信群中<span className="text-blue-500">@登录微信昵称 问题</span>；仅自己使用，登录<a className="text-blue-500" href="https://filehelper.weixin.qq.com/" target="_blank">文件传输助手</a>，命令： <span className="text-blue-500">@gpt</span></div>
-                </div>
-              </div>
+              {[
+                {
+                  id: 1,
+                  title: '1. 安装插件并连接 AI 源',
+                  desc: '打开插件设置页，选择网页登录模式或 API 模式，确保 AI 源处于登录状态。',
+                },
+                {
+                  id: 2,
+                  title: '2. 配置 Bot 规则与限额',
+                  desc: '按群聊或私聊场景设置触发方式、提问频率、告警阈值和默认提示词。',
+                },
+                {
+                  id: 3,
+                  title: '3. 在微信中触发自动回复',
+                  desc: '在群聊或私聊中使用 @昵称 + 问题，即可调用 AI 回复并持续迭代质量。',
+                },
+              ].map((item) => (
+                <button
+                  key={item.id}
+                  type="button"
+                  className={`w-full text-left flex items-start p-5 rounded-xl border transition duration-300 ease-in-out mb-3 ${
+                    tab === item.id
+                      ? 'bg-pink-100 border-pink-200 shadow-sm'
+                      : 'bg-white border-gray-200 hover:border-pink-200 hover:shadow-md'
+                  }`}
+                  onClick={() => setTab(item.id)}
+                >
+                  <div>
+                    <div className="font-semibold text-lg leading-snug tracking-wide mb-1 text-gray-900">{item.title}</div>
+                    <div className="text-gray-600 leading-relaxed">{item.desc}</div>
+                  </div>
+                </button>
+              ))}
             </div>
           </div>
 
-          {/* Tabs items */}
           <div
-            className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-6 lg:col-span-7 mb-8 md:mb-0 md:order-1"
+            className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-6 lg:col-span-7 mb-8 md:mb-0"
             data-aos="zoom-y-out"
             ref={tabs}
           >
-            <div className="relative flex flex-col text-center lg:text-right">
-              {/* Item 1 */}
+            <div className="relative flex flex-col text-center lg:text-right rounded-2xl bg-white border border-pink-100 p-3 shadow-sm overflow-hidden">
               <Transition
                 show={tab === 1}
                 appear={true}
@@ -118,17 +88,9 @@ function Features() {
                 leaveStart="opacity-100 translate-y-0"
                 leaveEnd="opacity-0 -translate-y-16"
               >
-                <div className="w-full relative inline-flex flex-col">
-                  <img
-                    className="md:max-w-none mx-auto rounded"
-                    src={FeaturesBg1}
-                    width="100%"
-                    height="100%"
-                    alt="Login wechat web page"
-                  />
-                </div>
+                <img className="w-full rounded-xl" src={FeaturesBg1} alt="配置 AI 源" loading="lazy" />
               </Transition>
-              {/* Item 2 */}
+
               <Transition
                 show={tab === 2}
                 appear={true}
@@ -140,17 +102,9 @@ function Features() {
                 leaveStart="opacity-100 translate-y-0"
                 leaveEnd="opacity-0 -translate-y-16"
               >
-                <div className="w-full relative inline-flex flex-col">
-                  <img
-                    className="md:max-w-none mx-auto rounded"
-                    src={FeaturesBg2}
-                    width="100%"
-                    height="100%"
-                    alt="Login chatgpt page"
-                  />
-                </div>
+                <img className="w-full rounded-xl" src={FeaturesBg2} alt="设置 bot 参数" loading="lazy" />
               </Transition>
-              {/* Item 3 */}
+
               <Transition
                 show={tab === 3}
                 appear={true}
@@ -162,15 +116,7 @@ function Features() {
                 leaveStart="opacity-100 translate-y-0"
                 leaveEnd="opacity-0 -translate-y-16"
               >
-                <div className="w-full relative inline-flex flex-col">
-                  <img
-                    className="md:max-w-none mx-auto rounded"
-                    src={FeaturesBg3}
-                    width="100%"
-                    height="100%"
-                    alt="Features bg"
-                  />
-                </div>
+                <img className="w-full rounded-xl" src={FeaturesBg3} alt="微信群触发回复" loading="lazy" />
               </Transition>
             </div>
           </div>

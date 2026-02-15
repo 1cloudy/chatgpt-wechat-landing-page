@@ -30,3 +30,7 @@
 .text-primary {
     color: #338CF5;
 }
+
+body {
+    background: radial-gradient(1200px 480px at 80% -20%, #fce7f3 0%, #ffffff 62%);
+}
