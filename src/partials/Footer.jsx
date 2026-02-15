@@ -46,6 +46,13 @@ function Footer() {
             <a className="text-pink-600 hover:underline" href="https://aow.me/disclaimer" target="_blank" rel="noreferrer">
               免责声明
             </a>
+            {' '}| 友情链接：
+            <a className="text-pink-600 hover:underline ml-1" href="https://diggx.nian.me" target="_blank" rel="noreferrer">
+              diggx.nian.me
+            </a>
+            <a className="text-pink-600 hover:underline ml-2" href="https://notes.nian.me" target="_blank" rel="noreferrer">
+              notes.nian.me
+            </a>
           </div>
         </div>
       </div>
