@@ -64,7 +64,7 @@ export default function FAQ() {
           <h2 className="mt-3 text-3xl md:text-4xl font-bold tracking-tight">常见问题</h2>
         </div>
 
-        <div className="mb-16 rounded-2xl border border-pink-100 bg-white p-4 sm:p-6 shadow-sm">
+        <div className="mb-16 rounded-2xl border border-pink-100 bg-white p-4 sm:p-6">
           <Faq data={data} />
         </div>
       </div>

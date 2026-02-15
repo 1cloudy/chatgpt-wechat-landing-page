@@ -35,7 +35,7 @@ export default function Join() {
 
         <div className="mb-16 grid grid-cols-1 md:grid-cols-3 gap-6">
           {items.map((item) => (
-            <div key={item.title} className="rounded-2xl border border-pink-100 bg-white p-5 text-center shadow-sm hover:shadow-md transition">
+            <div key={item.title} className="rounded-2xl border border-pink-100 bg-white p-5 text-center hover:shadow-md transition">
               <img className="w-36 md:w-44 mx-auto rounded-lg" src={item.img} alt={item.alt} loading="lazy" />
               <h3 className="mt-4 text-lg font-semibold text-gray-900">{item.title}</h3>
               <p className="mt-2 text-sm text-gray-600">{item.desc}</p>

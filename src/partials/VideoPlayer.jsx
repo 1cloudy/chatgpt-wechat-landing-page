@@ -11,7 +11,7 @@ const VideoPlayer = () => {
           <h2 className="mt-3 text-3xl md:text-4xl font-bold tracking-tight">1 分钟看懂插件效果</h2>
         </div>
 
-        <div className="rounded-2xl border border-pink-100 bg-white p-4 sm:p-5 shadow-sm overflow-hidden">
+        <div className="bg-white overflow-hidden">
           <div className="relative pt-[56.25%] rounded-xl overflow-hidden bg-gray-100">
             <iframe
               src={videoSrc}

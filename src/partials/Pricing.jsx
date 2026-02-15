@@ -67,11 +67,10 @@ const PricingTable = () => (
         {pricingTable.map((item) => (
           <div
             key={item.name}
-            className={`rounded-2xl border p-6 transition shadow-sm hover:shadow-md ${
-              item.highlighted
-                ? 'border-pink-300 bg-gradient-to-b from-pink-50 to-white'
-                : 'border-gray-200 bg-white'
-            }`}
+            className={`rounded-2xl border p-6 transition hover:shadow-md ${item.highlighted
+              ? 'border-pink-300 bg-gradient-to-b from-pink-50 to-white'
+              : 'border-gray-200 bg-white'
+              }`}
           >
             {item.highlighted && (
               <span className="inline-flex mb-3 px-2.5 py-1 rounded-full text-xs font-semibold bg-pink-600 text-white">
@@ -106,11 +105,10 @@ const PricingTable = () => (
               href={item.url}
               target="_blank"
               rel="noreferrer"
-              className={`mt-8 inline-flex w-full justify-center px-4 py-3 rounded-lg font-semibold transition ${
-                item.highlighted
-                  ? 'bg-pink-600 text-white hover:bg-pink-700'
-                  : 'bg-gray-900 text-white hover:bg-gray-800'
-              }`}
+              className={`mt-8 inline-flex w-full justify-center px-4 py-3 rounded-lg font-semibold transition ${item.highlighted
+                ? 'bg-pink-600 text-white hover:bg-pink-700'
+                : 'bg-gray-900 text-white hover:bg-gray-800'
+                }`}
             >
               {item.cta}
             </a>

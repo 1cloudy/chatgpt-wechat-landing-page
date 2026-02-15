@@ -55,11 +55,10 @@ function Features() {
                 <button
                   key={item.id}
                   type="button"
-                  className={`w-full text-left flex items-start p-5 rounded-xl border transition duration-300 ease-in-out mb-3 ${
-                    tab === item.id
-                      ? 'bg-pink-100 border-pink-200 shadow-sm'
-                      : 'bg-white border-gray-200 hover:border-pink-200 hover:shadow-md'
-                  }`}
+                  className={`w-full text-left flex items-start p-5 rounded-xl border transition duration-300 ease-in-out mb-3 ${tab === item.id
+                    ? 'bg-pink-100 border-pink-200'
+                    : 'bg-white border-gray-200 hover:border-pink-200 hover:shadow-md'
+                    }`}
                   onClick={() => setTab(item.id)}
                 >
                   <div>
@@ -76,7 +75,7 @@ function Features() {
             data-aos="zoom-y-out"
             ref={tabs}
           >
-            <div className="relative flex flex-col text-center lg:text-right rounded-2xl bg-white border border-pink-100 p-3 shadow-sm overflow-hidden">
+            <div className="relative flex flex-col text-center lg:text-right bg-white overflow-hidden">
               <Transition
                 show={tab === 1}
                 appear={true}
