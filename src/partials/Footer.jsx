@@ -47,8 +47,12 @@ function Footer() {
               免责声明
             </a>
             <span className="text-gray-400">|</span>
-            <a className="text-pink-600 hover:underline" href="https://diggx.nian.me" target="_blank" rel="noreferrer">
-              推文助手
+            <a className="text-pink-600 hover:underline" href="https://trends.aow.me" target="_blank" rel="noreferrer">
+              AI新闻早知道
+            </a>
+            <span className="text-gray-400">|</span>
+            <a className="text-pink-600 hover:underline" href="https://insight.aow.me" target="_blank" rel="noreferrer">
+              科技洞察
             </a>
             <span className="text-gray-400">|</span>
             <a className="text-pink-600 hover:underline" href="https://notes.nian.me" target="_blank" rel="noreferrer">
